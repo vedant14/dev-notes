@@ -75,11 +75,33 @@
 
 .md-typeset pre{
     margin: 30px auto;
-    max-width: 90%;
 }
 
 .md-typeset li{
     color: var(--md-default-fg-color--light);
+}
+
+.md-clipboard {
+    padding: 15px 40px;
+    position: absolute;
+    display: flex;
+    top: 100%;
+    background:  var(--md-code-bg-color);
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top: 1px solid var(--md-default-fg-color--lightest);
+    left: 0;
+    margin-left: 0px;
+    font-size: .85em;
+    font-family: var(--md-code-font-family);
+    align-items: center;
+    width: fit-content;
+}
+
+.md-clipboard:before{
+    content: "Copy snippet ";
 }
 
 
