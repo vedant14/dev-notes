@@ -462,32 +462,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Gatsby/Gatsby%20With%20Airtable/" class="md-nav__link">
-        Gatsby With Airtable
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../Gatsby/Importing%20Data%20from%20Json%20File/" class="md-nav__link">
-        Importing Data from Json File
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../Gatsby/Importing%20Data%20from%20YAML%20files/" class="md-nav__link">
-        Importing Data from YAML files
+      <a href="../../../Gatsby/Find%20and%20Filter/" class="md-nav__link">
+        Find and Filter
       </a>
     </li>
   
@@ -561,6 +537,147 @@
       <a href="../../../Gatsby/Using%20Dotenv/" class="md-nav__link">
         Using Dotenv
       </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_11" type="checkbox" id="__nav_3_11" >
+      
+      <label class="md-nav__link" for="__nav_3_11">
+        Forms
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Forms" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_11">
+          <span class="md-nav__icon md-icon"></span>
+          Forms
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Gatsby/Forms/Form%20with%20Airtable%20as%20Backend/" class="md-nav__link">
+        Form with Airtable as Backend
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_12" type="checkbox" id="__nav_3_12" >
+      
+      <label class="md-nav__link" for="__nav_3_12">
+        Importing Data
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Importing Data" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_12">
+          <span class="md-nav__icon md-icon"></span>
+          Importing Data
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Gatsby/Importing%20Data/Gatsby%20With%20Airtable/" class="md-nav__link">
+        Gatsby With Airtable
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Gatsby/Importing%20Data/Importing%20Data%20from%20Json%20File/" class="md-nav__link">
+        Importing Data from Json File
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Gatsby/Importing%20Data/Importing%20Data%20from%20YAML%20files/" class="md-nav__link">
+        Importing Data from YAML files
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_13" type="checkbox" id="__nav_3_13" >
+      
+      <label class="md-nav__link" for="__nav_3_13">
+        Search
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Search" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_13">
+          <span class="md-nav__icon md-icon"></span>
+          Search
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Gatsby/Search/Local%20Search/" class="md-nav__link">
+        Local Search
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -788,6 +905,20 @@
         <li class="md-nav__item">
   <a href="#create-a-new-policy-file" class="md-nav__link">
     Create a new policy file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editing-your-controllers" class="md-nav__link">
+    Editing your controllers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rescue-from-pandit" class="md-nav__link">
+    Rescue from Pandit
   </a>
   
 </li>
@@ -1047,9 +1178,8 @@
                   <h1>Creating a new Policy</h1>
                 
                 <h3 id="create-a-new-policy-file">Create a new policy file</h3>
-<ul>
-<li>Suppose the model name is meeting</li>
-</ul>
+<p><a href="https://gorails.com/episodes/authorization-with-pundit?autoplay=1">Video</a>
+- Suppose the model name is meeting</p>
 <pre><code>touch app/policies/meeting_policy.rb
 </code></pre>
 <ul>
@@ -1062,13 +1192,42 @@
     end
 end
 </code></pre>
+<h3 id="editing-your-controllers">Editing your controllers</h3>
 <ul>
-<li>In your <code>meetings_controller.rb</code> add the <code>authoize @meetings</code></li>
+<li>In your <code>meetings_controller.rb</code> add the <code>authoize @meetings</code> to the function you want to protect</li>
 </ul>
 <pre><code>  def index
     @meetings = Meeting.all
     authorize @meetings
   end
+</code></pre>
+<ul>
+<li>If you want to make authorisation required as the default you can add</li>
+</ul>
+<pre><code>after_action :verify_authorized 
+</code></pre>
+<ul>
+<li>Alternatives</li>
+</ul>
+<pre><code>after_action :verify_authorized, only: [:show, :edit ]
+after_action :verify_authorized, except: [:new, :create]
+</code></pre>
+<ul>
+<li>This would mean that the user will be redirected to login everytime they try to open a protected link</li>
+</ul>
+<pre><code>after_action :verify_authorized, unless: :devise_controller?
+</code></pre>
+<h3 id="rescue-from-pandit">Rescue from Pandit</h3>
+<ul>
+<li>This goes in <code>application_controller.rb</code></li>
+</ul>
+<pre><code>rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
+protected
+
+def user_not_authorized
+    flash[:alert] = &quot;You are not authorized to access this page.&quot;
+    redirect_to(request.referrer || root_path)
+end
 </code></pre>
                 
               
