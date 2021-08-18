@@ -14,7 +14,7 @@
     
     
       
-        <title>Common styles I use - Vedant's Dev Notes</title>
+        <title>Using States - Vedant's Dev Notes</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#import-colors" class="md-skip">
+        <a href="#importing-state-with-react" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Common styles I use
+              Using States
             
           </span>
         </div>
@@ -438,95 +438,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Common styles I use
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Common%20styles%20I%20use/" class="md-nav__link">
         Common styles I use
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#import-colors" class="md-nav__link">
-    Import Colors
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#media-screen" class="md-nav__link">
-    Media Screen
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#importing-an-image" class="md-nav__link">
-    Importing an image
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creating-a-grid" class="md-nav__link">
-    Creating a grid
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    Resources
-  </a>
-  
-    <nav class="md-nav" aria-label="Resources">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#using-props" class="md-nav__link">
-    Using Props
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#variables-in-string" class="md-nav__link">
-    Variables in string
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -630,11 +546,61 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../Using%20States/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Using States
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Using States
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#importing-state-with-react" class="md-nav__link">
+    Importing state with React
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-the-variables" class="md-nav__link">
+    Creating the variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changing-the-variable-value" class="md-nav__link">
+    Changing the variable value
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1219,67 +1185,23 @@
               
                 
                 
-                  <h1>Common styles I use</h1>
+                  <h1>Using States</h1>
                 
-                <h3 id="import-colors">Import Colors</h3>
-<ul>
-<li>Make sure the colors are in the <code>GlobalStyles.js</code> file</li>
+                <ul>
+<li>States are very interesting. These are variables in react that can persist just for that session of the browser. </li>
 </ul>
-<pre><code class="language-bash">    import { colors } from &quot;../../styles/GlobalStyles&quot;
+<h3 id="importing-state-with-react">Importing state with React</h3>
+<pre><code>import React, { useState } from &quot;react&quot;
 </code></pre>
+<h3 id="creating-the-variables">Creating the variables</h3>
 <ul>
-<li>Usage</li>
+<li>Pay attention to the syntax while naming the variables</li>
+<li>We set a default also</li>
 </ul>
-<pre><code class="language-jsx">color: ${colors.white};
+<pre><code>const [selectedRole, setSelectedRole] = useState(null)
 </code></pre>
-<hr />
-<h3 id="media-screen">Media Screen</h3>
-<ul>
-<li>Change the width to get the desired output <code>786</code> for table <code>1024</code> for desktop</li>
-</ul>
-<pre><code class="language-css">@media screen and (min-width: 768px) {
-    margin: 20px;
-}   
-
-</code></pre>
-<hr />
-<hr />
-<h3 id="importing-an-image">Importing an image</h3>
-<pre><code class="language-bash">import DateIcon from &quot;../../images/calendar.svg&quot;    
-
-&lt;img src={DateIcon} alt=&quot;date&quot; /&gt;
-</code></pre>
-<hr />
-<h3 id="creating-a-grid">Creating a grid</h3>
-<pre><code class="language-bash">    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 5px;
-    @media (min-width: 768px) {
-            grid-template: 3fr / 1fr 2fr;
-            grid-area: sidebar;
-    }
-
-</code></pre>
-<pre><code class="language-jsx">grid-template-areas: 
-    &quot;header header header header&quot;
-    &quot;main main . sidebar&quot;
-    &quot;footer footer footer footer&quot;;
-</code></pre>
-<h2 id="resources">Resources</h2>
-<p><a href="https://css-tricks.com/snippets/css/complete-guide-grid/">A Complete Guide to Grid | CSS-Tricks</a></p>
-<hr />
-<hr />
-<hr />
-<h3 id="using-props">Using Props</h3>
-<ol>
-<li>Here I am checking if the prop is event</li>
-</ol>
-<pre><code class="language-bash">
-background: ${props =&gt;
-        props.col % 2 === 0 ? `${colors.off_primary}` : `${colors.nav}`};
-</code></pre>
-<h3 id="variables-in-string">Variables in string</h3>
-<pre><code>&lt;Link to={`/properties/${id}`}&gt;
+<h3 id="changing-the-variable-value">Changing the variable value</h3>
+<pre><code>setSelectedRole(null)
 </code></pre>
                 
               
@@ -1305,7 +1227,7 @@ background: ${props =&gt;
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: My Gatsby notes" rel="prev">
+        <a href="../Using%20Dotenv/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Using Dotenv" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1314,20 +1236,20 @@ background: ${props =&gt;
               <span class="md-footer__direction">
                 Previous
               </span>
-              My Gatsby notes
+              Using Dotenv
             </div>
           </div>
         </a>
       
       
         
-        <a href="../Conditional%20Statements/" class="md-footer__link md-footer__link--next" aria-label="Next: Conditional Statements" rel="next">
+        <a href="../Forms/Form%20with%20Airtable%20as%20Backend/" class="md-footer__link md-footer__link--next" aria-label="Next: Form with Airtable as Backend" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Conditional Statements
+              Form with Airtable as Backend
             </div>
           </div>
           <div class="md-footer__button md-icon">
