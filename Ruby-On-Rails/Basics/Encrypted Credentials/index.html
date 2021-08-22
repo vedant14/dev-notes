@@ -14,7 +14,7 @@
     
     
       
-        <title>Pundit - Vedant's Dev Notes</title>
+        <title>Encrypted Credentials - Vedant's Dev Notes</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#install-the-pundit-gem" class="md-skip">
+        <a href="#open-the-credentials-file" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Pundit
+              Encrypted Credentials
             
           </span>
         </div>
@@ -888,14 +888,12 @@
             
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_2" type="checkbox" id="__nav_6_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_2" type="checkbox" id="__nav_6_2" >
       
       <label class="md-nav__link" for="__nav_6_2">
         Authorisations
@@ -913,7 +911,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../Authorisations/" class="md-nav__link">
         Authorisation in Rails
       </a>
     </li>
@@ -925,8 +923,73 @@
   
   
     <li class="md-nav__item">
-      <a href="../Creating%20a%20new%20Policy/" class="md-nav__link">
+      <a href="../../Authorisations/Creating%20a%20new%20Policy/" class="md-nav__link">
         Creating a new Policy
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Authorisations/Pundit/" class="md-nav__link">
+        Pundit
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" checked>
+      
+      <label class="md-nav__link" for="__nav_6_3">
+        Basics
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Basics" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_3">
+          <span class="md-nav__icon md-icon"></span>
+          Basics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Database%20Change/" class="md-nav__link">
+        Database Change
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Devise/" class="md-nav__link">
+        Devise
       </a>
     </li>
   
@@ -945,12 +1008,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Pundit
+          Encrypted Credentials
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Pundit
+        Encrypted Credentials
       </a>
       
         
@@ -966,22 +1029,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install-the-pundit-gem" class="md-nav__link">
-    Install the Pundit Gem
+  <a href="#open-the-credentials-file" class="md-nav__link">
+    Open the credentials file
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#generate-the-policies" class="md-nav__link">
-    Generate the Policies
+  <a href="#format-for-the-credentials-file" class="md-nav__link">
+    Format for the credentials file
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#including-in-application-controller" class="md-nav__link">
-    Including in Application Controller
+  <a href="#used-as-the-base-secret-for-all-messageverifiers-in-rails-including-the-one-protecting-cookies" class="md-nav__link">
+    Used as the base secret for all MessageVerifiers in Rails, including the one protecting cookies.
   </a>
   
 </li>
@@ -994,75 +1057,12 @@
   
 
           
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
-      
-      <label class="md-nav__link" for="__nav_6_3">
-        Basics
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Basics" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_3">
-          <span class="md-nav__icon md-icon"></span>
-          Basics
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
             
   
   
   
     <li class="md-nav__item">
-      <a href="../../Basics/Database%20Change/" class="md-nav__link">
-        Database Change
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Basics/Devise/" class="md-nav__link">
-        Devise
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Basics/Encrypted%20Credentials/" class="md-nav__link">
-        Encrypted Credentials
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Basics/Migrations/" class="md-nav__link">
+      <a href="../Migrations/" class="md-nav__link">
         Migrations
       </a>
     </li>
@@ -1074,7 +1074,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Basics/New%20Rails%20App/" class="md-nav__link">
+      <a href="../New%20Rails%20App/" class="md-nav__link">
         New Rails App
       </a>
     </li>
@@ -1250,34 +1250,28 @@
               
                 
                 
-                  <h1>Pundit</h1>
-                
-                <ul>
-<li>Pundit is what I use for Authorisations in rails </li>
-<li>CanCan is another alternative which I belive is more popular. </li>
-</ul>
-<h3 id="install-the-pundit-gem">Install the Pundit Gem</h3>
-<ul>
-<li>Get the latest version of the gem from <a href="https://rubygems.org/gems/pundit">rubygems</a></li>
-</ul>
-<pre><code>gem 'pundit', '~&gt; 2.1'
+                <h3 id="open-the-credentials-file">Open the credentials file</h3>
+<pre><code>rails credentials:edit
 </code></pre>
-<h3 id="generate-the-policies">Generate the Policies</h3>
-<ul>
-<li>Policies is the term Pundit uses for policy management. </li>
-<li>Running this command will create your first policy in <code>app/policies/application_policy.rb</code></li>
-</ul>
-<pre><code>rails g pundit:install
-</code></pre>
-<h3 id="including-in-application-controller">Including in Application Controller</h3>
-<ul>
-<li>Add the following line in <code>application_controller.rb</code></li>
-</ul>
-<pre><code>include Pundit
-</code></pre>
-<ul>
-<li>See <a href="../Creating%20a%20new%20Policy/">Creating a new policy next</a></li>
-</ul>
+<h3 id="format-for-the-credentials-file">Format for the credentials file</h3>
+<p>```
+production:
+  slack:
+    app_id: APPID
+    client_id: CLIENT_ID
+    client_secret: CLIENT_SECRET
+    verification_token: VERIFICATION_TOKEN
+    signing_secret: SIGNING_SECRET</p>
+<p>development:
+  slack:
+    app_id: APPID
+    client_id: CLIENT_ID
+    client_secret: CLIENT_SECRET
+    verification_token: VERIFICATION_TOKEN
+    <code>signing_secret: SIGNING_SECRET</code></p>
+<p>sendgrid_api_key: SENDGRID_API_KEY</p>
+<h1 id="used-as-the-base-secret-for-all-messageverifiers-in-rails-including-the-one-protecting-cookies">Used as the base secret for all MessageVerifiers in Rails, including the one protecting cookies.</h1>
+<p>secret_key_base: AUTOGENERATED CODE</p>
                 
               
               
@@ -1302,7 +1296,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../Creating%20a%20new%20Policy/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Creating a new Policy" rel="prev">
+        <a href="../Devise/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Devise" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1311,20 +1305,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Creating a new Policy
+              Devise
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../Basics/Database%20Change/" class="md-footer__link md-footer__link--next" aria-label="Next: Database Change" rel="next">
+        <a href="../Migrations/" class="md-footer__link md-footer__link--next" aria-label="Next: Migrations" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Database Change
+              Migrations
             </div>
           </div>
           <div class="md-footer__button md-icon">
