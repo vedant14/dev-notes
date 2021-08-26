@@ -60,8 +60,8 @@
 }
 
 .md-typeset h3{
-    font-style: italic;
-    color: var(--md-default-fg-color--lighter);
+    /*font-style: italic;*/
+    color: var(--md-default-fg-color--light);
     margin-top: 70px;
 }
 

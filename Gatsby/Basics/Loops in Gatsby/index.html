@@ -14,7 +14,7 @@
     
     
       
-        <title>Gatsby With Airtable - Vedant's Dev Notes</title>
+        <title>Loops in Gatsby - Vedant's Dev Notes</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sourcing-data" class="md-skip">
+        <a href="#using-map-function" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Gatsby With Airtable
+              Loops in Gatsby
             
           </span>
         </div>
@@ -438,9 +438,32 @@
             
   
   
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
+      
+      <label class="md-nav__link" for="__nav_3_2">
+        Basics
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Basics" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Basics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
   
     <li class="md-nav__item">
-      <a href="../../Common%20styles%20I%20use/" class="md-nav__link">
+      <a href="../Common%20styles%20I%20use/" class="md-nav__link">
         Common styles I use
       </a>
     </li>
@@ -452,7 +475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Conditional%20Statements/" class="md-nav__link">
+      <a href="../Conditional%20Statements/" class="md-nav__link">
         Conditional Statements
       </a>
     </li>
@@ -464,7 +487,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Find%20and%20Filter/" class="md-nav__link">
+      <a href="../Find%20and%20Filter/" class="md-nav__link">
         Find and Filter
       </a>
     </li>
@@ -474,23 +497,61 @@
             
   
   
-  
-    <li class="md-nav__item">
-      <a href="../../Infinte%20Scroll/" class="md-nav__link">
-        Infinte Scroll
-      </a>
-    </li>
-  
-
-          
-            
+    
   
   
-  
-    <li class="md-nav__item">
-      <a href="../../Loops%20in%20Gatsby/" class="md-nav__link">
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Loops in Gatsby
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Loops in Gatsby
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-map-function" class="md-nav__link">
+    Using Map function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mapping-over-a-node" class="md-nav__link">
+    Mapping over a node
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repeat-n-times" class="md-nav__link">
+    Repeat n times
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -500,7 +561,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../New%20Component%20Configurations/" class="md-nav__link">
+      <a href="../New%20Component%20Configurations/" class="md-nav__link">
         New Component Configurations
       </a>
     </li>
@@ -512,7 +573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../New%20Project/" class="md-nav__link">
+      <a href="../New%20Project/" class="md-nav__link">
         New Project
       </a>
     </li>
@@ -524,7 +585,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../../To%20Read%20Markdown%20files/" class="md-nav__link">
+      <a href="../Remote%20Images/" class="md-nav__link">
+        Remote Images
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../To%20Read%20Markdown%20files/" class="md-nav__link">
         To Read Markdown files
       </a>
     </li>
@@ -536,21 +609,15 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Using%20Dotenv/" class="md-nav__link">
+      <a href="../Using%20Dotenv/" class="md-nav__link">
         Using Dotenv
       </a>
     </li>
   
 
           
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Using%20States/" class="md-nav__link">
-        Using States
-      </a>
+        </ul>
+      </nav>
     </li>
   
 
@@ -563,14 +630,53 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_12" type="checkbox" id="__nav_3_12" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
       
-      <label class="md-nav__link" for="__nav_3_12">
+      <label class="md-nav__link" for="__nav_3_3">
+        Dynamic Data
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Dynamic Data" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Dynamic Data
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Dynamic%20Data/Firebase/" class="md-nav__link">
+        Firebase
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      <label class="md-nav__link" for="__nav_3_4">
         Forms
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Forms" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_12">
+        <label class="md-nav__title" for="__nav_3_4">
           <span class="md-nav__icon md-icon"></span>
           Forms
         </label>
@@ -597,21 +703,19 @@
             
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_13" type="checkbox" id="__nav_3_13" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
       
-      <label class="md-nav__link" for="__nav_3_13">
+      <label class="md-nav__link" for="__nav_3_5">
         Importing Data
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Importing Data" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_13">
+        <label class="md-nav__title" for="__nav_3_5">
           <span class="md-nav__icon md-icon"></span>
           Importing Data
         </label>
@@ -620,71 +724,10 @@
             
   
   
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Gatsby With Airtable
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        Gatsby With Airtable
-      </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#sourcing-data" class="md-nav__link">
-    Sourcing Data
-  </a>
-  
-    <nav class="md-nav" aria-label="Sourcing Data">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#install-the-plugin" class="md-nav__link">
-    Install the plugin
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-          
-            
-  
-  
   
     <li class="md-nav__item">
-      <a href="../Importing%20Data%20from%20Json%20File/" class="md-nav__link">
-        Importing Data from Json File
+      <a href="../../Importing%20Data/From%20Airtable/" class="md-nav__link">
+        From Airtable
       </a>
     </li>
   
@@ -695,8 +738,44 @@
   
   
     <li class="md-nav__item">
-      <a href="../Importing%20Data%20from%20YAML%20files/" class="md-nav__link">
-        Importing Data from YAML files
+      <a href="../../Importing%20Data/From%20Firebase/" class="md-nav__link">
+        From Firebase
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Importing%20Data/From%20GraphCMS/" class="md-nav__link">
+        From GraphCMS
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Importing%20Data/From%20Json%20File/" class="md-nav__link">
+        From Json File
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Importing%20Data/From%20YAML%20files/" class="md-nav__link">
+        From YAML files
       </a>
     </li>
   
@@ -716,14 +795,65 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_14" type="checkbox" id="__nav_3_14" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6" type="checkbox" id="__nav_3_6" >
       
-      <label class="md-nav__link" for="__nav_3_14">
+      <label class="md-nav__link" for="__nav_3_6">
+        React Basics
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="React Basics" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_6">
+          <span class="md-nav__icon md-icon"></span>
+          React Basics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../React%20Basics/Infinte%20Scroll/" class="md-nav__link">
+        Infinte Scroll
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../React%20Basics/Using%20States/" class="md-nav__link">
+        Using States
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_7" type="checkbox" id="__nav_3_7" >
+      
+      <label class="md-nav__link" for="__nav_3_7">
         SEO
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="SEO" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_14">
+        <label class="md-nav__title" for="__nav_3_7">
           <span class="md-nav__icon md-icon"></span>
           SEO
         </label>
@@ -755,14 +885,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_15" type="checkbox" id="__nav_3_15" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_8" type="checkbox" id="__nav_3_8" >
       
-      <label class="md-nav__link" for="__nav_3_15">
+      <label class="md-nav__link" for="__nav_3_8">
         Search
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Search" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_15">
+        <label class="md-nav__title" for="__nav_3_8">
           <span class="md-nav__icon md-icon"></span>
           Search
         </label>
@@ -1249,38 +1379,40 @@
               
                 
                 
-                  <h1>Gatsby With Airtable</h1>
+                  <h1>Loops in Gatsby</h1>
                 
-                <h2 id="sourcing-data">Sourcing Data</h2>
-<h3 id="install-the-plugin">Install the plugin</h3>
-<ul>
-<li>First things first, run the command to install the plugin  </li>
-</ul>
-<pre><code class="language-bash">    npm install gatsby-source-airtable
+                <h3 id="using-map-function">Using Map function</h3>
+<pre><code class="language-javascript">{data.allQuestionsJson.nodes.map(item =&gt; (
+  &lt;div&gt;{item.question}&lt;/div&gt;
+))}
+</code></pre>
+<h3 id="mapping-over-a-node">Mapping over a node</h3>
+<pre><code class="language-jsx">
+render={data =&gt; (
+  &lt;div class=&quot;featured-products&quot;&gt;
+    {data.allContentfulFeaturedProduct.edges.map(({ node }, i) =&gt; (
+      &lt;div class=&quot;product&quot; key={i}&gt;
+          &lt;div&gt;{product}&lt;/div&gt;
+      &lt;/div&gt;
+    ))}
+  &lt;/div&gt;
+)}
+</code></pre>
+<h3 id="repeat-n-times">Repeat n times</h3>
+<pre><code>const array = []
+let i = 0
+for (; i &lt; 11; i++) {
+    array.push(i)
+}
 </code></pre>
 <ul>
-<li>Use the plugin in the in the <code>gatsby-config.js</code></li>
-<li>Ensure that columns in and across the tables have unique names.</li>
-<li>This method is <strong>recommended</strong> since the <code>apiKey</code> is not exposed. Read more at <a href="../../Using%20Dotenv/">dotenv</a></li>
-<li>Read more about the options <a href="https://www.gatsbyjs.com/plugins/gatsby-source-airtable/">here</a></li>
+<li>In the JSX you can use array</li>
 </ul>
-<pre><code class="language-jsx">{
-      resolve: `gatsby-source-airtable`,
-      options: {
-        apiKey: process.env.AIRTABLE_API_KEY, // may instead specify via env, see below
-        tables: [
-          {
-            baseId: `mybase`,
-            tableName: `Boxes`,
-            mapping: {
-                        BoxAttachments: `fileNode`,
-                        BoxAdditional: `text/markdown`
-                    },
-            tableLinks: [`BoxItems`],
-          },
-        ],
-      },
-    },
+<pre><code>{array.map(item =&gt; (
+    &lt;button key={item} onClick={() =&gt; handleAnswerOptionClick(item)}&gt;
+        {item}
+    &lt;/button&gt;
+))}
 </code></pre>
                 
               
@@ -1306,7 +1438,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../../Forms/Form%20with%20Airtable%20as%20Backend/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Form with Airtable as Backend" rel="prev">
+        <a href="../Find%20and%20Filter/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Find and Filter" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1315,20 +1447,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Form with Airtable as Backend
+              Find and Filter
             </div>
           </div>
         </a>
       
       
         
-        <a href="../Importing%20Data%20from%20Json%20File/" class="md-footer__link md-footer__link--next" aria-label="Next: Importing Data from Json File" rel="next">
+        <a href="../New%20Component%20Configurations/" class="md-footer__link md-footer__link--next" aria-label="Next: New Component Configurations" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Importing Data from Json File
+              New Component Configurations
             </div>
           </div>
           <div class="md-footer__button md-icon">

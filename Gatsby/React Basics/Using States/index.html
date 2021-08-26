@@ -14,7 +14,7 @@
     
     
       
-        <title>Creating Social Cards - Vedant's Dev Notes</title>
+        <title>Using States - Vedant's Dev Notes</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#read-more-here" class="md-skip">
+        <a href="#importing-state-with-react" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Creating Social Cards
+              Using States
             
           </span>
         </div>
@@ -738,12 +738,14 @@
             
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6" type="checkbox" id="__nav_3_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6" type="checkbox" id="__nav_3_6" checked>
       
       <label class="md-nav__link" for="__nav_3_6">
         React Basics
@@ -761,53 +763,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../React%20Basics/Infinte%20Scroll/" class="md-nav__link">
+      <a href="../Infinte%20Scroll/" class="md-nav__link">
         Infinte Scroll
       </a>
     </li>
   
 
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../React%20Basics/Using%20States/" class="md-nav__link">
-        Using States
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-    
-  
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_7" type="checkbox" id="__nav_3_7" checked>
-      
-      <label class="md-nav__link" for="__nav_3_7">
-        SEO
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="SEO" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_7">
-          <span class="md-nav__icon md-icon"></span>
-          SEO
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
           
             
   
@@ -822,12 +783,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Creating Social Cards
+          Using States
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Creating Social Cards
+        Using States
       </a>
       
         
@@ -843,29 +804,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#read-more-here" class="md-nav__link">
-    Read more here
-  </a>
-  
-    <nav class="md-nav" aria-label="Read more here">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#update-seo-component-with" class="md-nav__link">
-    Update SEO component with
+  <a href="#importing-state-with-react" class="md-nav__link">
+    Importing state with React
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#in-the-page-file" class="md-nav__link">
-    In the page file
+      
+        <li class="md-nav__item">
+  <a href="#creating-the-variables" class="md-nav__link">
+    Creating the variables
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#changing-the-variable-value" class="md-nav__link">
+    Changing the variable value
+  </a>
   
 </li>
       
@@ -873,6 +828,45 @@
   
 </nav>
       
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_7" type="checkbox" id="__nav_3_7" >
+      
+      <label class="md-nav__link" for="__nav_3_7">
+        SEO
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="SEO" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_7">
+          <span class="md-nav__icon md-icon"></span>
+          SEO
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SEO/Creating%20Social%20Cards/" class="md-nav__link">
+        Creating Social Cards
+      </a>
     </li>
   
 
@@ -1385,213 +1379,23 @@
               
                 
                 
-                  <h1>Creating Social Cards</h1>
+                  <h1>Using States</h1>
                 
-                <h2 id="read-more-here">Read more here</h2>
-<ul>
-<li><a href="https://www.gatsbyjs.com/tutorial/seo-and-social-sharing-cards-tutorial/">Link</a></li>
+                <ul>
+<li>States are very interesting. These are variables in react that can persist just for that session of the browser. </li>
 </ul>
-<h3 id="update-seo-component-with">Update <code>SEO</code> component with</h3>
-<pre><code>import React from &quot;react&quot;
-import PropTypes from &quot;prop-types&quot;
-import { Helmet } from &quot;react-helmet&quot;
-import { useStaticQuery, graphql } from &quot;gatsby&quot;
-
-export function SEO({
-  description,
-  lang,
-  meta,
-  image: metaImage,
-  title,
-  pathname,
-}) {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-            keywords
-            siteUrl
-          }
-        }
-      }
-    `
-  )
-
-  const metaDescription = description || site.siteMetadata.description
-  const image =
-    metaImage &amp;&amp; metaImage.src
-      ? `${site.siteMetadata.siteUrl}${metaImage.src}`
-      : null
-  const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
-
-  return (
-    &lt;Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-      link={
-        canonical
-          ? [
-              {
-                rel: &quot;canonical&quot;,
-                href: canonical,
-              },
-            ]
-          : []
-      }
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          name: &quot;keywords&quot;,
-          content: site.siteMetadata.keywords.join(&quot;,&quot;),
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ]
-        .concat(
-          metaImage
-            ? [
-                {
-                  property: &quot;og:image&quot;,
-                  content: image,
-                },
-                {
-                  property: &quot;og:image:width&quot;,
-                  content: metaImage.width,
-                },
-                {
-                  property: &quot;og:image:height&quot;,
-                  content: metaImage.height,
-                },
-                {
-                  name: &quot;twitter:card&quot;,
-                  content: &quot;summary_large_image&quot;,
-                },
-              ]
-            : [
-                {
-                  name: &quot;twitter:card&quot;,
-                  content: &quot;summary&quot;,
-                },
-              ]
-        )
-        .concat(meta)}
-    /&gt;
-  )
-}
-
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
-}
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
-  image: PropTypes.shape({
-    src: PropTypes.string.isRequired,
-    height: PropTypes.number.isRequired,
-    width: PropTypes.number.isRequired,
-  }),
-  pathname: PropTypes.string,
-}
+<h3 id="importing-state-with-react">Importing state with React</h3>
+<pre><code>import React, { useState } from &quot;react&quot;
 </code></pre>
-<h3 id="in-the-page-file">In the page file</h3>
+<h3 id="creating-the-variables">Creating the variables</h3>
 <ul>
-<li>Focus on the <code>&lt;SEO&gt;</code> tag </li>
+<li>Pay attention to the syntax while naming the variables</li>
+<li>We set a default also</li>
 </ul>
-<pre><code>import React from &quot;react&quot;
-import { Link, graphql } from &quot;gatsby&quot;
-
-import SEO from &quot;../components/seo&quot;
-
-class BlogPostTemplate extends React.Component {
-  render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
-    const image = post.frontmatter.image
-      ? post.frontmatter.image.childImageSharp.resize
-      : null
-
-    return (
-      &lt;Layout location={this.props.location} title={siteTitle}&gt;
-        &lt;SEO
-          title={post.frontmatter.title}
-          description={post.frontmatter.description || post.excerpt}
-          image={image}
-          pathname={this.props.location.pathname}
-        /&gt;
-        &lt;h1&gt;{post.frontmatter.title}&lt;/h1&gt;
-        &lt;div dangerouslySetInnerHTML={{ __html: post.html }} /&gt;
-      &lt;/Layout&gt;
-    )
-  }
-}
-
-export default BlogPostTemplate
-
-export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-        author
-      }
-    }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
-      excerpt(pruneLength: 160)
-      html
-      frontmatter {
-        title
-        description
-        image: featured {
-          childImageSharp {
-            resize(width: 1200) {
-              src
-              height
-              width
-            }
-          }
-        }
-      }
-    }
-  }
-`
+<pre><code>const [selectedRole, setSelectedRole] = useState(null)
+</code></pre>
+<h3 id="changing-the-variable-value">Changing the variable value</h3>
+<pre><code>setSelectedRole(null)
 </code></pre>
                 
               
@@ -1617,7 +1421,7 @@ export const pageQuery = graphql`
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../../React%20Basics/Using%20States/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Using States" rel="prev">
+        <a href="../Infinte%20Scroll/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Infinte Scroll" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1626,20 +1430,20 @@ export const pageQuery = graphql`
               <span class="md-footer__direction">
                 Previous
               </span>
-              Using States
+              Infinte Scroll
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../Search/Local%20Search/" class="md-footer__link md-footer__link--next" aria-label="Next: Local Search" rel="next">
+        <a href="../../SEO/Creating%20Social%20Cards/" class="md-footer__link md-footer__link--next" aria-label="Next: Creating Social Cards" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Local Search
+              Creating Social Cards
             </div>
           </div>
           <div class="md-footer__button md-icon">
