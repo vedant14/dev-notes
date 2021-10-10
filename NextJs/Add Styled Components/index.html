@@ -1808,42 +1808,30 @@
 <li>I wish I could understand this, however this is also recommended in the official documentation</li>
 <li><a href="https://github.com/vercel/next.js/blob/canary/examples/with-styled-components/pages/_document.js">Link</a></li>
 </ul>
-<pre><code>import Document, { Head, Main, NextScript } from 'next/document';
-// Import styled components ServerStyleSheet
-import { ServerStyleSheet } from 'styled-components';
+<pre><code>import Document, { Html, Head, Main, NextScript } from &quot;next/document&quot;;
+import { ServerStyleSheet } from &quot;styled-components&quot;;
 
 export default class MyDocument extends Document {
-  static getInitialProps({ renderPage }) {
-    // Step 1: Create an instance of ServerStyleSheet
-    const sheet = new ServerStyleSheet();
+        static getInitialProps({ renderPage }) {
+                const sheet = new ServerStyleSheet();
+                const page = renderPage((App) =&gt; (props) =&gt;
+                        sheet.collectStyles(&lt;App {...props} /&gt;)
+                );
+                const styleTags = sheet.getStyleElement();
+                return { ...page, styleTags };
+        }
 
-    // Step 2: Retrieve styles from components in the page
-    const page = renderPage((App) =&gt; (props) =&gt;
-      sheet.collectStyles(&lt;App {...props} /&gt;),
-    );
-
-    // Step 3: Extract the styles as &lt;style&gt; tags
-    const styleTags = sheet.getStyleElement();
-
-    // Step 4: Pass styleTags as a prop
-    return { ...page, styleTags };
-  }
-
-  render() {
-    return (
-      &lt;html&gt;
-        &lt;Head&gt;
-          &lt;title&gt;My page&lt;/title&gt;
-          {/* Step 5: Output the styles in the head  */}
-          {this.props.styleTags}
-        &lt;/Head&gt;
-        &lt;body&gt;
-          &lt;Main /&gt;
-          &lt;NextScript /&gt;
-        &lt;/body&gt;
-      &lt;/html&gt;
-    );
-  }
+        render() {
+                return (
+                        &lt;Html&gt;
+                                &lt;Head&gt;{this.props.styleTags}&lt;/Head&gt;
+                                &lt;body&gt;
+                                        &lt;Main /&gt;
+                                        &lt;NextScript /&gt;
+                                &lt;/body&gt;
+                        &lt;/Html&gt;
+                );
+        }
 }
 </code></pre>
                 
