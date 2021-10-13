@@ -98,6 +98,7 @@
     font-family: var(--md-code-font-family);
     align-items: center;
     width: fit-content;
+    width: -moz-fit-content;
 }
 
 .md-clipboard:before{
