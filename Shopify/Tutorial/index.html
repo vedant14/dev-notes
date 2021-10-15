@@ -1625,8 +1625,32 @@
   
   
     <li class="md-nav__item">
+      <a href="../Commands%20CLI/" class="md-nav__link">
+        Commands CLI
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../Links/" class="md-nav__link">
         Links
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Mutations/" class="md-nav__link">
+        Mutations
       </a>
     </li>
   
@@ -1683,6 +1707,61 @@
   <a href="#create-pages" class="md-nav__link">
     Create pages
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-boiler-plate-for-nextjs" class="md-nav__link">
+    Add boiler plate for nextJs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-the-shopify-app" class="md-nav__link">
+    Creating the shopify app
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#to-create-the-oauth-system" class="md-nav__link">
+    To create the Oauth System
+  </a>
+  
+    <nav class="md-nav" aria-label="To create the Oauth System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-koa" class="md-nav__link">
+    install koa
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-the-node-server" class="md-nav__link">
+    Create the node server
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#store-js" class="md-nav__link">
+    Store js
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-avoid-ngrok-timeout" class="md-nav__link">
+    To avoid ngrok timeout
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1794,6 +1873,48 @@
 </code></pre>
 <pre><code>touch index.js
 </code></pre>
+<h3 id="add-boiler-plate-for-nextjs">Add boiler plate for nextJs</h3>
+<ul>
+<li>Add this in the scripts tag</li>
+</ul>
+<pre><code>&quot;scripts&quot;: {
+    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;,
+    &quot;dev&quot;: &quot;node server.js&quot;,
+    &quot;build&quot;: &quot;next build&quot;,
+    &quot;start&quot;: &quot;next start&quot;
+},
+</code></pre>
+<h2 id="creating-the-shopify-app">Creating the shopify app</h2>
+<ol>
+<li>Install Ngrok and run it on https 3000</li>
+<li>Create a new public app on shopify and add in the ngrok url</li>
+<li>Then copy the shopify keys to the <code>.env</code> file</li>
+</ol>
+<pre><code>SHOPIFY_API_KEY='someapikey'
+SHOPIFY_API_SECRET_KEY='somesecretapikey'
+</code></pre>
+<h2 id="to-create-the-oauth-system">To create the Oauth System</h2>
+<h3 id="install-koa">install koa</h3>
+<pre><code>npm install koa @shopify/koa-shopify-auth dotenv koa-session isomorphic-fetch @shopify/koa-shopify-graphql-proxy
+</code></pre>
+<h3 id="create-the-node-server">Create the node server</h3>
+<pre><code>touch server.js
+</code></pre>
+<h3 id="store-js">Store js</h3>
+<ul>
+<li>Storejs gives us the ability to store data in the user's local storage</li>
+</ul>
+<pre><code>npm install store-js
+</code></pre>
+<ul>
+<li>Importing it</li>
+</ul>
+<pre><code>import store from &quot;store-js&quot;
+</code></pre>
+<h3 id="to-avoid-ngrok-timeout">To avoid ngrok timeout</h3>
+<p>To avoid tunnels that timeout, it is recommended to signup for a free ngrok account at https://ngrok.com/signup. After you signup, install your personalized authorization token </p>
+<pre><code>shopify node tunnel auth mytoke
+</code></pre>
                 
               
               
@@ -1818,7 +1939,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../Links/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Links" rel="prev">
+        <a href="../Mutations/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Mutations" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1827,7 +1948,7 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Links
+              Mutations
             </div>
           </div>
         </a>
