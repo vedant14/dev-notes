@@ -1419,6 +1419,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#add-gitignore" class="md-nav__link">
+    Add gitignore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#create-the-pages-folder" class="md-nav__link">
     Create the pages folder
   </a>
@@ -2006,6 +2013,49 @@
   &quot;start&quot;: &quot;next start&quot;,
   &quot;lint&quot;: &quot;next lint&quot;
 }
+</code></pre>
+<h3 id="add-gitignore">Add gitignore</h3>
+<pre><code>touch .gitignore
+</code></pre>
+<ul>
+<li>Paste the following in it</li>
+</ul>
+<pre><code># See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# vercel
+.vercel
+
+.*
 </code></pre>
 <h3 id="create-the-pages-folder">Create the pages folder</h3>
 <pre><code>mkdir pages
