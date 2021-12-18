@@ -1475,13 +1475,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#adding-the-global-styles" class="md-nav__link">
-    Adding the global styles
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -2058,22 +2051,6 @@ export default class MyDocument extends Document {
                 );
         }
 }
-</code></pre>
-<h3 id="adding-the-global-styles">Adding the global styles</h3>
-<ul>
-<li>Import globalstyles in <code>_app.js</code> file</li>
-</ul>
-<pre><code>import { GlobalStyles } from &quot;../styles/GlobalStyles&quot;;
-function MyApp({ Component, pageProps }) {
-  return (
-    &lt;&gt;
-      &lt;GlobalStyles /&gt;
-      &lt;Component {...pageProps} /&gt;
-    &lt;/&gt;
-  );
-}
-
-export default MyApp;
 </code></pre>
                 
               
