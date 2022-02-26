@@ -1263,6 +1263,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#git-revert" class="md-nav__link">
+    Git Revert
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2081,6 +2088,25 @@
 </code></pre>
 <h3 id="git-commit-message-ammend">Git commit message ammend</h3>
 <pre><code>git commit --amend -m&quot;Bug fix for the head tag&quot;
+</code></pre>
+<ul>
+<li>Git reset </li>
+<li>To <a href="https://www.theserverside.com/video/Dont-git-revert-that-last-commit-git-reset-instead">undo every change</a> that has happened since a given commit occurred, use git reset</li>
+</ul>
+<pre><code>
+</code></pre>
+<h3 id="git-revert">Git Revert</h3>
+<ul>
+<li>Don't use</li>
+<li>This will just undo the changes done to the code during that git commit, not the one preceeding or suceeding them</li>
+<li><a href="https://www.theserverside.com/tutorial/How-to-git-revert-a-commit-A-simple-undo-changes-example">Good article</a> on this</li>
+</ul>
+<pre><code>git revert SHA
+</code></pre>
+<ul>
+<li>If you want to reverse the action do this</li>
+</ul>
+<pre><code>git cherry-pick SHA
 </code></pre>
                 
               

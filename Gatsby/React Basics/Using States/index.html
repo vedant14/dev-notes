@@ -1071,6 +1071,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#toggle-states" class="md-nav__link">
+    Toggle States
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2060,6 +2067,13 @@
 </code></pre>
 <h3 id="changing-the-variable-value">Changing the variable value</h3>
 <pre><code>setSelectedRole(null)
+</code></pre>
+<h3 id="toggle-states">Toggle States</h3>
+<pre><code>function toggleIndiaPricing() {
+    setSelectedIndia((prevSelectedIndia) =&gt; !prevSelectedIndia);
+}
+</code></pre>
+<pre><code>&lt;button onClick={toggleIndiaPricing}&gt;India&lt;/button&gt;
 </code></pre>
                 
               
