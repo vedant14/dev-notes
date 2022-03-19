@@ -1470,26 +1470,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#auto-setup" class="md-nav__link">
-    Auto Setup
-  </a>
-  
-    <nav class="md-nav" aria-label="Auto Setup">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creating-a-new-project-on-nextjs" class="md-nav__link">
-    Creating a new project on NextJS
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -2175,13 +2155,11 @@ export default MyApp;
 <pre><code>touch pages/index.js
 </code></pre>
 <pre><code>import React from &quot;react&quot;;
-const Home = () =&gt; {
-  return (
-    &lt;div&gt;
-        This is the home page
-    &lt;/div&gt;
-  );
-};
+function Home() {
+
+    return &lt;div&gt;This is the home page&lt;/div&gt;;
+
+}
 
 export default Home;
 </code></pre>
@@ -2191,10 +2169,6 @@ export default Home;
 <pre><code>touch components/index.js
 </code></pre>
 <pre><code>export * from &quot;./QuizResult&quot;;
-</code></pre>
-<h2 id="auto-setup">Auto Setup</h2>
-<h3 id="creating-a-new-project-on-nextjs">Creating a new project on NextJS</h3>
-<pre><code>npm create-next-app my-new-app
 </code></pre>
                 
               

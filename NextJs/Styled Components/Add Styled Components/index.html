@@ -2084,30 +2084,35 @@
 <li>I wish I could understand this, however this is also recommended in the official documentation</li>
 <li><a href="https://github.com/vercel/next.js/blob/canary/examples/with-styled-components/pages/_document.js">Link</a></li>
 </ul>
-<pre><code>import Document, { Html, Head, Main, NextScript } from &quot;next/document&quot;;
+<pre><code>import Document from &quot;next/document&quot;;
 import { ServerStyleSheet } from &quot;styled-components&quot;;
 
 export default class MyDocument extends Document {
-        static getInitialProps({ renderPage }) {
-                const sheet = new ServerStyleSheet();
-                const page = renderPage((App) =&gt; (props) =&gt;
-                        sheet.collectStyles(&lt;App {...props} /&gt;)
-                );
-                const styleTags = sheet.getStyleElement();
-                return { ...page, styleTags };
-        }
+  static async getInitialProps(ctx) {
+    const sheet = new ServerStyleSheet();
+    const originalRenderPage = ctx.renderPage;
 
-        render() {
-                return (
-                        &lt;Html&gt;
-                                &lt;Head&gt;{this.props.styleTags}&lt;/Head&gt;
-                                &lt;body&gt;
-                                        &lt;Main /&gt;
-                                        &lt;NextScript /&gt;
-                                &lt;/body&gt;
-                        &lt;/Html&gt;
-                );
-        }
+    try {
+      ctx.renderPage = () =&gt;
+        originalRenderPage({
+          enhanceApp: (App) =&gt; (props) =&gt;
+            sheet.collectStyles(&lt;App {...props} /&gt;),
+        });
+
+      const initialProps = await Document.getInitialProps(ctx);
+      return {
+        ...initialProps,
+        styles: (
+          &lt;&gt;
+            {initialProps.styles}
+            {sheet.getStyleElement()}
+          &lt;/&gt;
+        ),
+      };
+    } finally {
+      sheet.seal();
+    }
+  }
 }
 </code></pre>
                 
