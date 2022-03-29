@@ -2139,15 +2139,13 @@ yarn-error.log*
 <li>This has to be copied in the <code>_app.js</code> file</li>
 <li>You can update this file to add styles components</li>
 </ul>
-<pre><code>function MyApp({ Component, pageProps }) {
+<pre><code>export default function MyApp({ Component, pageProps }) {
   return (
     &lt;&gt;
       &lt;Component {...pageProps} /&gt;
     &lt;/&gt;
   );
 }
-
-export default MyApp;
 </code></pre>
 <ul>
 <li>Home page</li>
@@ -2155,13 +2153,11 @@ export default MyApp;
 <pre><code>touch pages/index.js
 </code></pre>
 <pre><code>import React from &quot;react&quot;;
-function Home() {
+export default function Home() {
 
     return &lt;div&gt;This is the home page&lt;/div&gt;;
 
 }
-
-export default Home;
 </code></pre>
 <h3 id="add-components-folder">Add components folder</h3>
 <pre><code>mkdir components
