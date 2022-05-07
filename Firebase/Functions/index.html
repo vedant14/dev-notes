@@ -514,18 +514,6 @@
             
   
   
-  
-    <li class="md-nav__item">
-      <a href="../Commands%20that%20come%20in%20handy/" class="md-nav__link">
-        Commands that come in handy
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
     
   
   
@@ -533,14 +521,14 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
       
-      <label class="md-nav__link" for="__nav_3_3">
+      <label class="md-nav__link" for="__nav_3_2">
         Functions
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Functions" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_3">
+        <label class="md-nav__title" for="__nav_3_2">
           <span class="md-nav__icon md-icon"></span>
           Functions
         </label>
@@ -587,9 +575,36 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#default-configurations" class="md-nav__link">
+    Default configurations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#run-emulators" class="md-nav__link">
     Run Emulators
   </a>
+  
+    <nav class="md-nav" aria-label="Run Emulators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#to-start-the-emulators" class="md-nav__link">
+    To Start the emulators
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-kill-a-process-for-emulators" class="md-nav__link">
+    To kill a process for emulators
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2097,7 +2112,40 @@
 </ul>
 <pre><code>firebase init functions
 </code></pre>
-<h3 id="run-emulators">Run Emulators</h3>
+<h3 id="default-configurations">Default configurations</h3>
+<ul>
+<li>I use it to get started</li>
+</ul>
+<pre><code>const functions = require(&quot;firebase-functions&quot;);
+const admin = require(&quot;firebase-admin&quot;);
+var express = require(&quot;express&quot;);
+var app = express();
+const cors = require(&quot;cors&quot;)({ origin: true });
+app.use(cors);
+admin.initializeApp();
+const db = admin.firestore();
+
+app.get(&quot;/&quot;, function (req, res) {
+    res.status(200).send(&quot;No User ID&quot;);
+});
+
+exports.app = functions.https.onRequest(app);
+</code></pre>
+<h2 id="run-emulators">Run Emulators</h2>
+<ul>
+<li>Test the APIs locally</li>
+</ul>
+<h3 id="to-start-the-emulators">To Start the emulators</h3>
+<pre><code>firebase emulators:start  
+</code></pre>
+<h3 id="to-kill-a-process-for-emulators">To kill a process for emulators</h3>
+<pre><code>sudo lsof -i :8000
+</code></pre>
+<ul>
+<li>Add the pid</li>
+</ul>
+<pre><code>sudo kill -9 PID
+</code></pre>
                 
               
               
@@ -2122,7 +2170,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../Commands%20that%20come%20in%20handy/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Commands that come in handy" rel="prev">
+        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Index" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -2131,7 +2179,7 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Commands that come in handy
+              Index
             </div>
           </div>
         </a>
