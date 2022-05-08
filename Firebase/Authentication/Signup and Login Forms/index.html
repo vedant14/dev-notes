@@ -14,7 +14,7 @@
     
     
       
-        <title>2. New Component Configurations - Vedant's Dev Notes</title>
+        <title>Signup and Login Forms - Vedant's Dev Notes</title>
       
     
     
@@ -62,6 +62,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#create-the-pages-and-utilty-file" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -88,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2. New Component Configurations
+              Signup and Login Forms
             
           </span>
         </div>
@@ -175,13 +180,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../../Firebase/" class="md-tabs__link">
+      <a href="../../" class="md-tabs__link md-tabs__link--active">
         Firebase
       </a>
     </li>
@@ -255,15 +262,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../" class="md-tabs__link md-tabs__link--active">
+      <a href="../../../NextJs/" class="md-tabs__link">
         NextJs
       </a>
     </li>
@@ -474,12 +479,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       <label class="md-nav__link" for="__nav_3">
         Firebase
@@ -497,7 +504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Firebase/" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         Index
       </a>
     </li>
@@ -507,12 +514,14 @@
             
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
       
       <label class="md-nav__link" for="__nav_3_2">
         Authentication
@@ -530,7 +539,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Firebase/Authentication/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         Authentication Setup
       </a>
     </li>
@@ -542,7 +551,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Firebase/Authentication/Context/" class="md-nav__link">
+      <a href="../Context/" class="md-nav__link">
         Context
       </a>
     </li>
@@ -552,11 +561,101 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../../Firebase/Authentication/Signup%20and%20Login%20Forms/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Signup and Login Forms
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Signup and Login Forms
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-pages-and-utilty-file" class="md-nav__link">
+    Create the pages and utilty file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#login-function" class="md-nav__link">
+    Login function
+  </a>
+  
+    <nav class="md-nav" aria-label="Login function">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#login-form" class="md-nav__link">
+    Login form
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-the-userlogin-utility" class="md-nav__link">
+    Create the UserLogin Utility
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#signup-function" class="md-nav__link">
+    Signup function
+  </a>
+  
+    <nav class="md-nav" aria-label="Signup function">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#signup-form" class="md-nav__link">
+    Signup Form
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signup-utility" class="md-nav__link">
+    Signup Utility
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -593,7 +692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Firebase/Functions/" class="md-nav__link">
+      <a href="../../Functions/" class="md-nav__link">
         Index
       </a>
     </li>
@@ -1368,14 +1467,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
       
       <label class="md-nav__link" for="__nav_8">
         NextJs
@@ -1393,7 +1490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
+      <a href="../../../NextJs/" class="md-nav__link">
         Index
       </a>
     </li>
@@ -1426,7 +1523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Data/From%20Airtable/" class="md-nav__link">
+      <a href="../../../NextJs/Data/From%20Airtable/" class="md-nav__link">
         From Airtable
       </a>
     </li>
@@ -1438,7 +1535,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Data/From%20GraphQL/" class="md-nav__link">
+      <a href="../../../NextJs/Data/From%20GraphQL/" class="md-nav__link">
         From GraphQL
       </a>
     </li>
@@ -1450,7 +1547,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Data/From%20a%20JSON%20file/" class="md-nav__link">
+      <a href="../../../NextJs/Data/From%20a%20JSON%20file/" class="md-nav__link">
         From a JSON file
       </a>
     </li>
@@ -1466,14 +1563,12 @@
             
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_3" type="checkbox" id="__nav_8_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_3" type="checkbox" id="__nav_8_3" >
       
       <label class="md-nav__link" for="__nav_8_3">
         New Project
@@ -1491,7 +1586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../1.%20Start/" class="md-nav__link">
+      <a href="../../../NextJs/New%20Project/1.%20Start/" class="md-nav__link">
         1. Start
       </a>
     </li>
@@ -1501,19 +1596,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../NextJs/New%20Project/2.%20New%20Component%20Configurations/" class="md-nav__link">
         2. New Component Configurations
       </a>
-      
     </li>
   
 
@@ -1550,7 +1637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Pages/1.%20Static%20pages/" class="md-nav__link">
+      <a href="../../../NextJs/Pages/1.%20Static%20pages/" class="md-nav__link">
         1. Static pages
       </a>
     </li>
@@ -1589,7 +1676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Styled%20Components/Add%20Styled%20Components/" class="md-nav__link">
+      <a href="../../../NextJs/Styled%20Components/Add%20Styled%20Components/" class="md-nav__link">
         Add Styled Components
       </a>
     </li>
@@ -1601,7 +1688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Styled%20Components/Create%20Global%20Styles/" class="md-nav__link">
+      <a href="../../../NextJs/Styled%20Components/Create%20Global%20Styles/" class="md-nav__link">
         Create Global Styles
       </a>
     </li>
@@ -2098,34 +2185,140 @@
               
                 
                 
-                  <h1>2. New Component Configurations</h1>
+                  <h1>Signup and Login Forms</h1>
                 
-                <ul>
-<li>Normally when I create a new component, I configure it this way</li>
-<li>In the  <code>index.js</code></li>
-</ul>
-<pre><code class="language-jsx">
-import React from &quot;react&quot;
-import { Wrapper } from &quot;./styles&quot;
+                <h3 id="create-the-pages-and-utilty-file">Create the pages and utilty file</h3>
+<pre><code>touch pages/login.js
+</code></pre>
+<pre><code>touch pages/signup.js
+</code></pre>
+<pre><code>touch utils/firebaseUserRequests.js
+</code></pre>
+<h2 id="login-function">Login function</h2>
+<h3 id="login-form">Login form</h3>
+<pre><code>import { useState } from &quot;react&quot;;
+import { userLoginEmail } from &quot;../utils/firebaseUserRequests&quot;;
+import { useAuth } from &quot;../context/AuthContext&quot;;
+import { useRouter } from &quot;next/router&quot;;
+export default function Login() {
+  const [userEmail, setUserEmail] = useState(&quot;&quot;);
+  const [password, setPassword] = useState(&quot;&quot;);
+  const [error, setError] = useState(null);
+  const { uniqueId } = useAuth();
+  const router = useRouter();
+  async function userLogin(e) {
+    e.preventDefault();
+    if (userEmail === &quot;&quot; || password === &quot;&quot;) {
+      setError(&quot;Please fill all the fields&quot;);
+    } else {
+      userLoginEmail(userEmail, password, setError);
+    }
+  }
+  if (uniqueId) {
+    router.push(&quot;/dashboard&quot;);
+  }
+  return (
+    &lt;form&gt;
+      &lt;input
+        type=&quot;email&quot;
+        value={userEmail}
+        onChange={(e) =&gt; setUserEmail(e.target.value)}
+      /&gt;
+      &lt;input
+        type=&quot;password&quot;
+        value={password}
+        onChange={(e) =&gt; setPassword(e.target.value)}
+      /&gt;
+      &lt;div&gt;
+        &lt;button
+          onClick={(e) =&gt; userLogin(e)}
+        &gt;
+          Login
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;
+  );
 
-export function Something() {
-    return(
-        &lt;Wrapper&gt;
-            &lt;h1&gt;Something&lt;/h1&gt;
-        &lt;/Wrapper&gt;
-    )
 }
 </code></pre>
+<h3 id="create-the-userlogin-utility">Create the UserLogin Utility</h3>
 <ul>
-<li>In the <code>styles.js</code></li>
-<li>Note this uses the styled - components</li>
+<li>In the firebaseUserRequests file</li>
+<li>You can change the navigations link from <code>/dashboard</code></li>
 </ul>
-<pre><code class="language-jsx">import styled from &quot;styled-components&quot;
-import { colors } from &quot;../../styles/GlobalStyles&quot;
+<pre><code>import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from &quot;firebase/auth&quot;;
+import Router from &quot;next/router&quot;;
+import { auth } from &quot;./firebaseConfig&quot;;
 
-export const Wrapper = styled.div`
-    margin: 30px;
-`
+export async function userLoginEmail(userEmail, password, setError) {
+
+  await signInWithEmailAndPassword(auth, userEmail, password)
+    .then(() =&gt; Router.push(&quot;/dashboard&quot;))
+    .catch((error) =&gt; {
+      setError(error.message);
+    });
+}
+</code></pre>
+<h2 id="signup-function">Signup function</h2>
+<h3 id="signup-form">Signup Form</h3>
+<pre><code>import { useState } from &quot;react&quot;;
+import { userSignUpEmail } from &quot;../utils/firebaseUserRequests&quot;;
+import { useAuth } from &quot;../context/AuthContext&quot;
+import { useRouter } from &quot;next/router&quot;;
+export default function SignUp() {
+  const [userEmail, setUserEmail] = useState(&quot;&quot;);
+  const [password, setPassword] = useState(&quot;&quot;);
+  const [error, setError] = useState(null);
+  const { uniqueId } = useAuth();
+  const router = useRouter();
+  async function userSignUp(e) {
+    e.preventDefault();
+    if (userEmail === &quot;&quot; || password === &quot;&quot;) {
+      setError(&quot;Please fill all the fields&quot;);
+    } else {
+      userSignUpEmail( userEmail.trim(), password, setError);
+    }
+  }
+
+  if (uniqueId) {
+    router.push(&quot;/dashboard&quot;);
+  }
+
+  return (
+    &lt;form&gt;  
+      &lt;input
+        type=&quot;email&quot;
+        value={userEmail}
+        onChange={(e) =&gt; setUserEmail(e.target.value)}
+      /&gt;
+      &lt;input
+        type=&quot;password&quot;
+        value={password}
+        onChange={(e) =&gt; setPassword(e.target.value)}
+      /&gt;
+      &lt;div&gt;
+        &lt;button
+          onClick={(e) =&gt; userLogin(e)}
+        &gt;
+          SignUp
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;
+  );
+}
+</code></pre>
+<h3 id="signup-utility">Signup Utility</h3>
+<ul>
+<li>In the firebaseUserRequests file
+`</li>
+</ul>
+<pre><code>export async function userSignUpEmail( userEmail, password, setError) {
+  createUserWithEmailAndPassword(auth, userEmail, password)
+    .then(() =&gt; Router.push(&quot;/dashboard&quot;))
+    .catch((error) =&gt; {
+      setError(error.message);
+    });
+}
 </code></pre>
                 
               
@@ -2151,7 +2344,7 @@ export const Wrapper = styled.div`
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../1.%20Start/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 1. Start" rel="prev">
+        <a href="../Context/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Context" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -2160,20 +2353,20 @@ export const Wrapper = styled.div`
               <span class="md-footer__direction">
                 Previous
               </span>
-              1. Start
+              Context
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../Pages/1.%20Static%20pages/" class="md-footer__link md-footer__link--next" aria-label="Next: 1. Static pages" rel="next">
+        <a href="../../Functions/" class="md-footer__link md-footer__link--next" aria-label="Next: Index" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              1. Static pages
+              Index
             </div>
           </div>
           <div class="md-footer__button md-icon">

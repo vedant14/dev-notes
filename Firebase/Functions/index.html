@@ -514,6 +514,69 @@
             
   
   
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      <label class="md-nav__link" for="__nav_3_2">
+        Authentication
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Authentication" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Authentication
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Authentication/" class="md-nav__link">
+        Authentication Setup
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Authentication/Context/" class="md-nav__link">
+        Context
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Authentication/Signup%20and%20Login%20Forms/" class="md-nav__link">
+        Signup and Login Forms
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
     
   
   
@@ -521,14 +584,14 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" checked>
       
-      <label class="md-nav__link" for="__nav_3_2">
+      <label class="md-nav__link" for="__nav_3_3">
         Functions
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Functions" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_2">
+        <label class="md-nav__title" for="__nav_3_3">
           <span class="md-nav__icon md-icon"></span>
           Functions
         </label>
@@ -575,6 +638,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#deploy-functions" class="md-nav__link">
+    Deploy functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#default-configurations" class="md-nav__link">
     Default configurations
   </a>
@@ -582,29 +652,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#run-emulators" class="md-nav__link">
-    Run Emulators
-  </a>
-  
-    <nav class="md-nav" aria-label="Run Emulators">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#to-start-the-emulators" class="md-nav__link">
     To Start the emulators
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#to-kill-a-process-for-emulators" class="md-nav__link">
     To kill a process for emulators
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2112,6 +2169,9 @@
 </ul>
 <pre><code>firebase init functions
 </code></pre>
+<h3 id="deploy-functions">Deploy functions</h3>
+<pre><code>firebase deploy --only functions
+</code></pre>
 <h3 id="default-configurations">Default configurations</h3>
 <ul>
 <li>I use it to get started</li>
@@ -2131,18 +2191,20 @@ app.get(&quot;/&quot;, function (req, res) {
 
 exports.app = functions.https.onRequest(app);
 </code></pre>
-<h2 id="run-emulators">Run Emulators</h2>
+<h3 id="to-start-the-emulators">To Start the emulators</h3>
 <ul>
 <li>Test the APIs locally</li>
 </ul>
-<h3 id="to-start-the-emulators">To Start the emulators</h3>
 <pre><code>firebase emulators:start  
 </code></pre>
 <h3 id="to-kill-a-process-for-emulators">To kill a process for emulators</h3>
+<ul>
+<li>Sometimes the processes are not killed properly</li>
+</ul>
 <pre><code>sudo lsof -i :8000
 </code></pre>
 <ul>
-<li>Add the pid</li>
+<li>Add the pid in this command</li>
 </ul>
 <pre><code>sudo kill -9 PID
 </code></pre>
@@ -2170,7 +2232,7 @@ exports.app = functions.https.onRequest(app);
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Index" rel="prev">
+        <a href="../Authentication/Signup%20and%20Login%20Forms/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Signup and Login Forms" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -2179,7 +2241,7 @@ exports.app = functions.https.onRequest(app);
               <span class="md-footer__direction">
                 Previous
               </span>
-              Index
+              Signup and Login Forms
             </div>
           </div>
         </a>

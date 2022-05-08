@@ -14,7 +14,7 @@
     
     
       
-        <title>2. New Component Configurations - Vedant's Dev Notes</title>
+        <title>Context - Vedant's Dev Notes</title>
       
     
     
@@ -62,6 +62,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#create-the-context-file" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -88,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2. New Component Configurations
+              Context
             
           </span>
         </div>
@@ -175,13 +180,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../../Firebase/" class="md-tabs__link">
+      <a href="../../" class="md-tabs__link md-tabs__link--active">
         Firebase
       </a>
     </li>
@@ -255,15 +262,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../" class="md-tabs__link md-tabs__link--active">
+      <a href="../../../NextJs/" class="md-tabs__link">
         NextJs
       </a>
     </li>
@@ -474,12 +479,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       <label class="md-nav__link" for="__nav_3">
         Firebase
@@ -497,7 +504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Firebase/" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         Index
       </a>
     </li>
@@ -507,12 +514,14 @@
             
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
       
       <label class="md-nav__link" for="__nav_3_2">
         Authentication
@@ -530,7 +539,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Firebase/Authentication/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         Authentication Setup
       </a>
     </li>
@@ -540,11 +549,68 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../../Firebase/Authentication/Context/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Context
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Context
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-context-file" class="md-nav__link">
+    Create the context file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fill-the-file" class="md-nav__link">
+    Fill the file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-getuser-utility" class="md-nav__link">
+    Create the getUser utility
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#call-the-context-to-the-app" class="md-nav__link">
+    Call the context to the app
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -554,7 +620,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Firebase/Authentication/Signup%20and%20Login%20Forms/" class="md-nav__link">
+      <a href="../Signup%20and%20Login%20Forms/" class="md-nav__link">
         Signup and Login Forms
       </a>
     </li>
@@ -593,7 +659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Firebase/Functions/" class="md-nav__link">
+      <a href="../../Functions/" class="md-nav__link">
         Index
       </a>
     </li>
@@ -1368,14 +1434,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
       
       <label class="md-nav__link" for="__nav_8">
         NextJs
@@ -1393,7 +1457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
+      <a href="../../../NextJs/" class="md-nav__link">
         Index
       </a>
     </li>
@@ -1426,7 +1490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Data/From%20Airtable/" class="md-nav__link">
+      <a href="../../../NextJs/Data/From%20Airtable/" class="md-nav__link">
         From Airtable
       </a>
     </li>
@@ -1438,7 +1502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Data/From%20GraphQL/" class="md-nav__link">
+      <a href="../../../NextJs/Data/From%20GraphQL/" class="md-nav__link">
         From GraphQL
       </a>
     </li>
@@ -1450,7 +1514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Data/From%20a%20JSON%20file/" class="md-nav__link">
+      <a href="../../../NextJs/Data/From%20a%20JSON%20file/" class="md-nav__link">
         From a JSON file
       </a>
     </li>
@@ -1466,14 +1530,12 @@
             
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_3" type="checkbox" id="__nav_8_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_3" type="checkbox" id="__nav_8_3" >
       
       <label class="md-nav__link" for="__nav_8_3">
         New Project
@@ -1491,7 +1553,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../1.%20Start/" class="md-nav__link">
+      <a href="../../../NextJs/New%20Project/1.%20Start/" class="md-nav__link">
         1. Start
       </a>
     </li>
@@ -1501,19 +1563,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../NextJs/New%20Project/2.%20New%20Component%20Configurations/" class="md-nav__link">
         2. New Component Configurations
       </a>
-      
     </li>
   
 
@@ -1550,7 +1604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Pages/1.%20Static%20pages/" class="md-nav__link">
+      <a href="../../../NextJs/Pages/1.%20Static%20pages/" class="md-nav__link">
         1. Static pages
       </a>
     </li>
@@ -1589,7 +1643,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Styled%20Components/Add%20Styled%20Components/" class="md-nav__link">
+      <a href="../../../NextJs/Styled%20Components/Add%20Styled%20Components/" class="md-nav__link">
         Add Styled Components
       </a>
     </li>
@@ -1601,7 +1655,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Styled%20Components/Create%20Global%20Styles/" class="md-nav__link">
+      <a href="../../../NextJs/Styled%20Components/Create%20Global%20Styles/" class="md-nav__link">
         Create Global Styles
       </a>
     </li>
@@ -2098,34 +2152,89 @@
               
                 
                 
-                  <h1>2. New Component Configurations</h1>
+                  <h1>Context</h1>
                 
-                <ul>
-<li>Normally when I create a new component, I configure it this way</li>
-<li>In the  <code>index.js</code></li>
-</ul>
-<pre><code class="language-jsx">
-import React from &quot;react&quot;
-import { Wrapper } from &quot;./styles&quot;
+                <h3 id="create-the-context-file">Create the context file</h3>
+<pre><code>mkdir context
+</code></pre>
+<pre><code>touch context/AuthContext.js
+</code></pre>
+<h3 id="fill-the-file">Fill the file</h3>
+<pre><code>import { useEffect, useState, createContext, useContext } from &quot;react&quot;;
+import { auth } from &quot;../utils/firebaseConfig&quot;;
+// import { getUserProfile } from &quot;../utils/firebaseUserRequests&quot;;
+const AuthContext = createContext();
 
-export function Something() {
-    return(
-        &lt;Wrapper&gt;
-            &lt;h1&gt;Something&lt;/h1&gt;
-        &lt;/Wrapper&gt;
-    )
+export function useAuth() {
+    return useContext(AuthContext);
+}
+
+
+
+export function AuthProvider({ children }) {
+const [currentUser, setCurrentUser] = useState(null);
+const [uniqueId, setUniqueId] = useState(null);
+const [authenticatedState, setAuthenticatedState] = useState(&quot;not-authenticated&quot;);
+
+
+// async function checkUser() {
+    // const user = await auth.currentUser;
+        // if (user) {
+            // getUserProfile(setCurrentUser, user.uid);
+            // setAccessToken(user.accessToken);
+    // }
+// }
+
+useEffect(() =&gt; {
+    const unsubscribe = auth.onAuthStateChanged((user) =&gt; {
+        if (user) {
+            setUniqueId(user.uid);
+            setAuthenticatedState(&quot;authenticated&quot;);
+        } else {
+            setCurrentUser(null);
+            setUniqueId(null);
+            setAuthenticatedState(&quot;not-authenticated&quot;);
+        }
+    });
+    return unsubscribe;
+}, []);
+
+// useEffect(() =&gt; {
+    // checkUser();
+// }, [authenticatedState]);
+
+let sharedState = {currentUser,uniqueId};
+    return (
+        &lt;AuthContext.Provider value={sharedState}&gt;{children}&lt;/AuthContext.Provider&gt;
+    );
 }
 </code></pre>
+<h3 id="create-the-getuser-utility">Create the getUser utility</h3>
 <ul>
-<li>In the <code>styles.js</code></li>
-<li>Note this uses the styled - components</li>
+<li>Optional</li>
 </ul>
-<pre><code class="language-jsx">import styled from &quot;styled-components&quot;
-import { colors } from &quot;../../styles/GlobalStyles&quot;
-
-export const Wrapper = styled.div`
-    margin: 30px;
-`
+<pre><code>export async function getUserProfile(setCurrentUser, uniqueId) {
+    const usersRef = doc(db, &quot;user_profile&quot;, uniqueId);
+    const userSnapShot = await getDoc(usersRef);
+    if (userSnapShot.exists()) {
+        setCurrentUser(userSnapShot.data());
+    } else {
+        setCurrentUser(null);
+    }
+}
+</code></pre>
+<h3 id="call-the-context-to-the-app">Call the context to the app</h3>
+<ul>
+<li>In the <code>_app.js</code> file</li>
+</ul>
+<pre><code>import { AuthProvider } from &quot;../context/AuthContext&quot;;
+export default function MyApp({ Component, pageProps }) {
+    return (
+        &lt;AuthProvider&gt;
+            &lt;Component {...pageProps} /&gt;
+        &lt;/AuthProvider&gt;
+    );
+}
 </code></pre>
                 
               
@@ -2151,7 +2260,7 @@ export const Wrapper = styled.div`
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../1.%20Start/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 1. Start" rel="prev">
+        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Authentication Setup" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -2160,20 +2269,20 @@ export const Wrapper = styled.div`
               <span class="md-footer__direction">
                 Previous
               </span>
-              1. Start
+              Authentication Setup
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../Pages/1.%20Static%20pages/" class="md-footer__link md-footer__link--next" aria-label="Next: 1. Static pages" rel="next">
+        <a href="../Signup%20and%20Login%20Forms/" class="md-footer__link md-footer__link--next" aria-label="Next: Signup and Login Forms" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              1. Static pages
+              Signup and Login Forms
             </div>
           </div>
           <div class="md-footer__button md-icon">
