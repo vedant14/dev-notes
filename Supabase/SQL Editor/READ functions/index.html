@@ -2271,6 +2271,38 @@
 from pg_timezone_names()
 order by name;
 </code></pre>
+<pre><code>export async function getBookingFromSearch(query, callback) {
+    let pattern = /@/g;
+    let filterByEmail = null;
+    let filterByPhone = null;
+    let result = pattern.test(query);
+
+    if (result) {
+        filterByEmail = query;
+    } else {
+        filterByPhone = query;
+    }
+
+    let query = supabase
+        .from(&quot;bookings&quot;)
+        .select(`*, brands(name)`)
+        .order(&quot;inserted_at&quot;, { ascending: false });
+
+    if (filterByEmail) {
+        query = query.eq(&quot;booking_email&quot;, filterByEmail);
+    }
+    if (filterByPhone) {
+        query = query.eq(&quot;booking_phone&quot;, filterByPhone);
+    }
+
+    let { data: bookings, error } = await query;
+    if (error) {
+        return callback(error);
+    } else {
+        return callback(bookings);
+    }
+}
+</code></pre>
                 
               
               
