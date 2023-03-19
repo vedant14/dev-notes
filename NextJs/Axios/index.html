@@ -1481,6 +1481,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#get-request" class="md-nav__link">
+    Get request
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2453,6 +2460,9 @@
                 
                 <h2 id="using-axios">Using Axios</h2>
 <h3 id="post-request-with-axios">Post Request with Axios</h3>
+<ul>
+<li>Import axios first</li>
+</ul>
 <pre><code>async function handleSubmit() {
     const adData = {
         title: title,
@@ -2469,6 +2479,16 @@
     console.error(error);
     });
 }
+</code></pre>
+<h3 id="get-request">Get request</h3>
+<pre><code>await axios.get(&quot;/api/db/get-testimonyal&quot;, {params: {shopId: shopId}})
+.then(function (response) {
+    // TODO: toast message and redirect
+    console.log(response);
+})
+.catch(function (error) {
+    console.error(error);
+});
 </code></pre>
                 
               
