@@ -3995,7 +3995,7 @@
   <h1>3. Tailwind CSS</h1>
 
 <h3 id="install-tailwind">Install tailwind</h3>
-<pre><code>npm install -D tailwindcss
+<pre><code>npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init
 </code></pre>
 <h3 id="configure-template-files">Configure template files</h3>
@@ -4033,15 +4033,23 @@ npx tailwindcss init
 </ol>
 <pre><code>mkdir styles &amp;&amp; echo &quot;@tailwind base; @tailwind components; @tailwind utilities;&quot; &gt; styles/globals.css
 </code></pre>
-<p>OR </p>
-<pre><code>@tailwind base; 
-@tailwind components; 
+<p>OR</p>
+<pre><code>@tailwind base;
+@tailwind components;
 @tailwind utilities;
 </code></pre>
 <ol>
 <li>Import in <code>_app.js</code></li>
 </ol>
 <pre><code>import &quot;../styles/globals.css&quot;;
+</code></pre>
+<ol>
+<li>Test</li>
+</ol>
+<pre><code>export default function Home() {
+  return &lt;p className=&quot;text-3xl font-bold underline&quot;&gt;Hello world!&lt;/p&gt;;
+}
+
 </code></pre>
 
 
