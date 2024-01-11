@@ -4396,6 +4396,37 @@ process.exit(1);
 </ul>
 <pre><code>npx prisma db seed
 </code></pre>
+<h1 id="querying-data-from-prisma">Querying data from Prisma</h1>
+<pre><code>import prisma from &quot;../../utils/prisma&quot;;
+
+function bigIntToString(obj) {
+for (let key in obj) {
+if (typeof obj[key] === &quot;bigint&quot;) {
+obj[key] = obj[key].toString();
+} else if (typeof obj[key] === &quot;object&quot; &amp;&amp; obj[key] !== null) {
+bigIntToString(obj[key]);
+}
+}
+}
+// GET /api/users
+export default async function handle(req, res) {
+if (req.method === &quot;GET&quot;) {
+try {
+const users = await prisma.user.findMany();
+users.forEach((user) =&gt; bigIntToString(user));
+res.status(200).json(users);
+} catch (error) {
+console.error(&quot;Request error&quot;, error);
+res.status(500).json({ error: &quot;Error fetching users&quot; });
+}
+} else {
+// Handle any other HTTP method
+res.setHeader(&quot;Allow&quot;, [&quot;GET&quot;]);
+res.status(405).json({ error: `Method ${req.method} Not Allowed` });
+}
+}
+
+</code></pre>
 
 
 
