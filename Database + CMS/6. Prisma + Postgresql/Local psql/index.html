@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../5.%20Ghost/">
+        <link rel="prev" href="../Index/">
       
       
-        <link rel="next" href="../../../Front-end%20Frameworks/1.%20NextJs/">
+        <link rel="next" href="../Migrations/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -1609,6 +1609,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
@@ -1641,6 +1647,46 @@
                 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../APIs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    APIs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Index/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prisma
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -1648,8 +1694,6 @@
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
-      
-        
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
@@ -1679,8 +1723,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1689,16 +1731,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#local-psql" class="md-nav__link">
+    Local psql
+  </a>
+  
+    <nav class="md-nav" aria-label="Local psql">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#enter-psql" class="md-nav__link">
     Enter psql
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#exit-psql" class="md-nav__link">
     Exit psql
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1706,6 +1761,26 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Migrations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Migrations
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -4090,8 +4165,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -4100,16 +4173,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#local-psql" class="md-nav__link">
+    Local psql
+  </a>
+  
+    <nav class="md-nav" aria-label="Local psql">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#enter-psql" class="md-nav__link">
     Enter psql
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#exit-psql" class="md-nav__link">
     Exit psql
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -4128,7 +4214,9 @@
                   
 
 
-<h1 id="local-psql">Local psql</h1>
+  <h1>Local psql</h1>
+
+<h2 id="local-psql">Local psql</h2>
 <h3 id="enter-psql">Enter psql</h3>
 <pre><code>psql
 </code></pre>
@@ -4136,297 +4224,6 @@
 <pre><code>\q
 </code></pre>
 <p><a href="https://hasura.io/blog/top-psql-commands-and-flags-you-need-to-know-postgresql/">For more info</a></p>
-<h1 id="prisma">Prisma</h1>
-<h3 id="perform-migration">Perform migration</h3>
-<ul>
-<li>The name can be changed</li>
-</ul>
-<pre><code>npx prisma migrate dev --name add_name_email_to_user
-</code></pre>
-<h3 id="schema-prismaschema">Schema prisma.schema</h3>
-<ul>
-<li>the file name <code>schema.prisma</code></li>
-<li>Re-check the schema file, this was created by chatGPT</li>
-</ul>
-<pre><code>// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-generator client {
-    provider = &quot;prisma-client-js&quot;
-}
-
-datasource db {
-    provider = &quot;postgresql&quot;
-    url = env(&quot;DATABASE_URL&quot;)
-}
-
-model User {
-    id BigInt @id @default(autoincrement())
-    name String // New field for the user's name
-    email String @unique // New field for the user's email, marked as unique
-    sessions Session[]
-    createdAt DateTime @default(now())
-    updatedAt DateTime @updatedAt
-} 
-
-model Session {
-    id BigInt @id @default(autoincrement())
-    userId BigInt
-    user User @relation(fields: [userId], references: [id])
-    sessionExercises SessionExercise[]
-    createdAt DateTime @default(now())
-    updatedAt DateTime @updatedAt
-}
-
-model Exercise {
-    id BigInt @id @default(autoincrement())
-    name String
-    sessionExercises SessionExercise[]
-    exerciseFocusAreas ExerciseFocusArea[]
-    createdAt DateTime @default(now())
-    updatedAt DateTime @updatedAt
-}
-
-model SessionExercise {
-    id BigInt @id @default(autoincrement())
-    sessionId BigInt
-    exerciseId BigInt
-    session Session @relation(fields: [sessionId], references: [id])
-    exercise Exercise @relation(fields: [exerciseId], references: [id])
-    sessionExerciseSets SessionExerciseSet[]
-    createdAt DateTime @default(now())
-    updatedAt DateTime @updatedAt
-}
-
-model FocusArea {
-    id BigInt @id @default(autoincrement())
-    name String
-    muscleGroup String
-    exerciseFocusAreas ExerciseFocusArea[]
-    createdAt DateTime @default(now())
-    updatedAt DateTime @updatedAt
-}
-
-model ExerciseFocusArea {
-    id BigInt @id @default(autoincrement())
-    exerciseId BigInt
-    focusAreaId BigInt
-    exercise Exercise @relation(fields: [exerciseId], references: [id])
-    focusArea FocusArea @relation(fields: [focusAreaId], references: [id])
-    createdAt DateTime @default(now())
-    updatedAt DateTime @updatedAt
-}
-
-model SessionExerciseSet {
-    id BigInt @id @default(autoincrement())
-    sessionExerciseId BigInt
-    roundCount Int
-    weight BigInt
-    weightUnitId Int
-    sessionExercise SessionExercise @relation(fields: [sessionExerciseId], references: [id])
-    weightUnit WeightUnit @relation(fields: [weightUnitId], references: [id])
-    createdAt DateTime @default(now())
-    updatedAt DateTime @updatedAt
-} 
-
-model WeightUnit {
-    id Int @id @default(autoincrement())
-    name String
-    sessionExerciseSets SessionExerciseSet[]
-    createdAt DateTime @default(now())
-    updatedAt DateTime @updatedAt
-}
-</code></pre>
-<h3 id="seed-file">Seed file</h3>
-<ul>
-<li>in the <code>seed.js</code> file</li>
-</ul>
-<pre><code>const { PrismaClient } = require(&quot;@prisma/client&quot;);
-const prisma = new PrismaClient();
-
-async function main() {
-console.log(`Start seeding ...`);
-
-
-
-// Seed Users
-
-const users = [];
-const list = [&quot;vedant1&quot;, &quot;anjali1&quot;, &quot;trainer1&quot;];
-
-for (const item of list) {
-    const user = await prisma.user.create({
-        data: { name: item, email: `${item}@gymapp.com` },
-    });
-    users.push(user);
-}
-
-// Seed Sessions
-const sessions = [];
-for (let i = 1; i &lt;= 5; i++) {
-    const session = await prisma.session.create({
-        data: { userId: users[i % users.length].id },
-    });
-    sessions.push(session);
-}
-
-// Seed Exercises
-
-const exercises = [];
-for (let i = 1; i &lt;= 5; i++) {
-const exercise = await prisma.exercise.create({
-        data: { name: `Exercise ${i}` },
-    });
-    exercises.push(exercise);
-}
-
-
-
-// Seed SessionExercises
-
-for (const session of sessions) {
-    for (const exercise of exercises) {
-    await prisma.sessionExercise.create({
-        data: {
-            sessionId: session.id,
-            exerciseId: exercise.id,
-            },
-        });
-    }
-}
-
-
-
-// Seed FocusAreas
-const focusAreaData = [
-    { name: &quot;Chest&quot;, muscleGroup: &quot;Upper Body&quot; },
-    { name: &quot;Back&quot;, muscleGroup: &quot;Upper Body&quot; },
-    { name: &quot;Legs&quot;, muscleGroup: &quot;Lower Body&quot; },
-    { name: &quot;Arms&quot;, muscleGroup: &quot;Upper Body&quot; },
-    { name: &quot;Shoulders&quot;, muscleGroup: &quot;Upper Body&quot; },
-];
-
-
-
-for (const { name, muscleGroup } of focusAreaData) {
-    await prisma.focusArea.create({
-        data: { name, muscleGroup },
-    });
-}
-
-// Seed ExerciseFocusAreas
-for (const exercise of exercises) {
-    for (let i = 1; i &lt;= 5; i++) {
-        await prisma.exerciseFocusArea.create({
-            data: { exerciseId: exercise.id, focusAreaId: i },
-        });
-    }
-}
-
-
-
-// Seed WeightUnits
-for (const name of [&quot;kg&quot;, &quot;lbs&quot;]) {
-    await prisma.weightUnit.create({
-        data: { name },
-    });
-}
-
-
-
-// Seed SessionExerciseSets
-
-const sessionExercises = await prisma.sessionExercise.findMany();
-for (const sessionExercise of sessionExercises) {
-    await prisma.sessionExerciseSet.create({
-        data: {
-            sessionExerciseId: sessionExercise.id,
-            roundCount: Math.floor(Math.random() * 5) + 1, // Random rounds between 1 and 5
-            weight: Math.floor(Math.random() * 100), // Random weight
-            weightUnitId: Math.floor(Math.random() * 2) + 1, // Randomly select between 1 and 2
-        },
-    });
-}
-
-
-console.log(`Seeding finished.`);
-}
-
-
-
-main()
-.then(async () =&gt; {
-await prisma.$disconnect();
-})
-.catch(async (e) =&gt; {
-console.error(e);
-await prisma.$disconnect();
-process.exit(1);
-});
-</code></pre>
-<ul>
-<li>In the <code>package.json</code></li>
-</ul>
-<pre><code>{
-&quot;prisma&quot;: {
-&quot;seed&quot;: &quot;node prisma/seed.js&quot;
-},
-&quot;scripts&quot;: {
-&quot;dev&quot;: &quot;next dev&quot;,
-&quot;build&quot;: &quot;next build&quot;,
-&quot;start&quot;: &quot;next start&quot;,
-&quot;lint&quot;: &quot;next lint&quot;
-},
-&quot;dependencies&quot;: {
-&quot;@prisma/client&quot;: &quot;^5.8.0&quot;,
-&quot;next&quot;: &quot;^14.0.1&quot;,
-&quot;react&quot;: &quot;^18.2.0&quot;,
-&quot;react-dom&quot;: &quot;^18.2.0&quot;
-},
-&quot;devDependencies&quot;: {
-&quot;autoprefixer&quot;: &quot;^10.4.16&quot;,
-&quot;postcss&quot;: &quot;^8.4.31&quot;,
-&quot;prisma&quot;: &quot;^5.8.0&quot;,
-&quot;tailwindcss&quot;: &quot;^3.3.5&quot;
-}
-}
-</code></pre>
-<ul>
-<li>Run the seeds file</li>
-</ul>
-<pre><code>npx prisma db seed
-</code></pre>
-<h1 id="querying-data-from-prisma">Querying data from Prisma</h1>
-<pre><code>import prisma from &quot;../../utils/prisma&quot;;
-
-function bigIntToString(obj) {
-for (let key in obj) {
-if (typeof obj[key] === &quot;bigint&quot;) {
-obj[key] = obj[key].toString();
-} else if (typeof obj[key] === &quot;object&quot; &amp;&amp; obj[key] !== null) {
-bigIntToString(obj[key]);
-}
-}
-}
-// GET /api/users
-export default async function handle(req, res) {
-if (req.method === &quot;GET&quot;) {
-try {
-const users = await prisma.user.findMany();
-users.forEach((user) =&gt; bigIntToString(user));
-res.status(200).json(users);
-} catch (error) {
-console.error(&quot;Request error&quot;, error);
-res.status(500).json({ error: &quot;Error fetching users&quot; });
-}
-} else {
-// Handle any other HTTP method
-res.setHeader(&quot;Allow&quot;, [&quot;GET&quot;]);
-res.status(405).json({ error: `Method ${req.method} Not Allowed` });
-}
-}
-
-</code></pre>
 
 
 

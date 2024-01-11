@@ -9,22 +9,22 @@
       
       
       
-        <link rel="prev" href="../POST%20functions/">
+        <link rel="prev" href="../APIs/">
       
       
-        <link rel="next" href="../Triggers/">
+        <link rel="next" href="../Local%20psql/">
       
       
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.2.7">
     
     
       
-        <title>READ functions - Vedant's Dev Notes</title>
+        <title>Prisma - Vedant's Dev Notes</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.046329b4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.046329b4.min.css">
       
       
 
@@ -43,9 +43,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../../Tools and tricks/stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../Tools and tricks/stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#getting-timezones" class="md-skip">
+        <a href="#prisma" class="md-skip">
           Skip to content
         </a>
       
@@ -81,7 +81,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="Vedant&#39;s Dev Notes" class="md-header__button md-logo" aria-label="Vedant's Dev Notes" data-md-component="logo">
+    <a href="../../.." title="Vedant&#39;s Dev Notes" class="md-header__button md-logo" aria-label="Vedant's Dev Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              READ functions
+              Prisma
             
           </span>
         </div>
@@ -167,7 +167,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
     
@@ -192,7 +192,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../Backend/Ruby-On-Rails/" class="md-tabs__link">
+        <a href="../../../Backend/Ruby-On-Rails/" class="md-tabs__link">
           
   
     
@@ -225,7 +225,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../" class="md-tabs__link">
+        <a href="../../1.%20Supabase/" class="md-tabs__link">
           
   
     
@@ -254,7 +254,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../Front-end%20Frameworks/1.%20NextJs/" class="md-tabs__link">
+        <a href="../../../Front-end%20Frameworks/1.%20NextJs/" class="md-tabs__link">
           
   
     
@@ -283,7 +283,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../Integrations/Shopify/" class="md-tabs__link">
+        <a href="../../../Integrations/Shopify/" class="md-tabs__link">
           
   
     
@@ -312,7 +312,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../Tools%20and%20tricks/Dev%20Notes/" class="md-tabs__link">
+        <a href="../../../Tools%20and%20tricks/Dev%20Notes/" class="md-tabs__link">
           
   
     
@@ -350,7 +350,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="Vedant&#39;s Dev Notes" class="md-nav__button md-logo" aria-label="Vedant's Dev Notes" data-md-component="logo">
+    <a href="../../.." title="Vedant&#39;s Dev Notes" class="md-nav__button md-logo" aria-label="Vedant's Dev Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -367,7 +367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -451,7 +451,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../Backend/Ruby-On-Rails/" class="md-nav__link ">
+            <a href="../../../Backend/Ruby-On-Rails/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -505,7 +505,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../Backend/Ruby-On-Rails/Authorisations/" class="md-nav__link ">
+            <a href="../../../Backend/Ruby-On-Rails/Authorisations/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -536,7 +536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Backend/Ruby-On-Rails/Authorisations/Creating%20a%20new%20Policy/" class="md-nav__link">
+      <a href="../../../Backend/Ruby-On-Rails/Authorisations/Creating%20a%20new%20Policy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -556,7 +556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Backend/Ruby-On-Rails/Authorisations/Pundit/" class="md-nav__link">
+      <a href="../../../Backend/Ruby-On-Rails/Authorisations/Pundit/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -630,7 +630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Backend/Ruby-On-Rails/Basics/Database%20Change/" class="md-nav__link">
+      <a href="../../../Backend/Ruby-On-Rails/Basics/Database%20Change/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -650,7 +650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Backend/Ruby-On-Rails/Basics/Devise/" class="md-nav__link">
+      <a href="../../../Backend/Ruby-On-Rails/Basics/Devise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -670,7 +670,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Backend/Ruby-On-Rails/Basics/Encrypted%20Credentials/" class="md-nav__link">
+      <a href="../../../Backend/Ruby-On-Rails/Basics/Encrypted%20Credentials/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -690,7 +690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Backend/Ruby-On-Rails/Basics/Migrations/" class="md-nav__link">
+      <a href="../../../Backend/Ruby-On-Rails/Basics/Migrations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -710,7 +710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Backend/Ruby-On-Rails/Basics/New%20Rails%20App/" class="md-nav__link">
+      <a href="../../../Backend/Ruby-On-Rails/Basics/New%20Rails%20App/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -776,7 +776,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Backend/Ruby-On-Rails/Search/search/" class="md-nav__link">
+      <a href="../../../Backend/Ruby-On-Rails/Search/search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -823,7 +823,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../Backend/Ruby-On-Rails/Slack-Bot/" class="md-nav__link ">
+            <a href="../../../Backend/Ruby-On-Rails/Slack-Bot/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -921,8 +921,6 @@
                 
   
   
-    
-  
   
     
     
@@ -937,18 +935,18 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../" class="md-nav__link ">
+            <a href="../../1.%20Supabase/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -964,7 +962,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
             1. Supabase
@@ -998,7 +996,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../Functions/" class="md-nav__link ">
+            <a href="../../1.%20Supabase/Functions/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1031,8 +1029,6 @@
                 
   
   
-    
-  
   
     
     
@@ -1045,13 +1041,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_3" >
         
           <label class="md-nav__link" for="__nav_3_1_3" id="__nav_3_1_3_label" tabindex="0">
             
@@ -1064,7 +1060,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_1_3">
             <span class="md-nav__icon md-icon"></span>
             SQL Editor
@@ -1077,7 +1073,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../POST%20functions/" class="md-nav__link">
+      <a href="../../1.%20Supabase/SQL%20Editor/POST%20functions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1095,27 +1091,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    READ functions
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../1.%20Supabase/SQL%20Editor/READ%20functions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1124,31 +1102,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#getting-timezones" class="md-nav__link">
-    Getting TimeZones
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1160,7 +1113,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Triggers/" class="md-nav__link">
+      <a href="../../1.%20Supabase/SQL%20Editor/Triggers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1219,7 +1172,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../2.%20Firebase/" class="md-nav__link ">
+            <a href="../../2.%20Firebase/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1273,7 +1226,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../2.%20Firebase/Authentication/" class="md-nav__link ">
+            <a href="../../2.%20Firebase/Authentication/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1304,7 +1257,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../2.%20Firebase/Authentication/Context/" class="md-nav__link">
+      <a href="../../2.%20Firebase/Authentication/Context/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1324,7 +1277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../2.%20Firebase/Authentication/Signup%20and%20Login%20Forms/" class="md-nav__link">
+      <a href="../../2.%20Firebase/Authentication/Signup%20and%20Login%20Forms/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1373,7 +1326,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../2.%20Firebase/Functions/" class="md-nav__link ">
+            <a href="../../2.%20Firebase/Functions/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1404,7 +1357,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../2.%20Firebase/Functions/Environment%20Variables/" class="md-nav__link">
+      <a href="../../2.%20Firebase/Functions/Environment%20Variables/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1459,7 +1412,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../3.%20Sanity/" class="md-nav__link ">
+            <a href="../../3.%20Sanity/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1517,7 +1470,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../4.%20Strapi/" class="md-nav__link ">
+            <a href="../../4.%20Strapi/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1548,7 +1501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../4.%20Strapi/Common%20command%20I%20use/" class="md-nav__link">
+      <a href="../../4.%20Strapi/Common%20command%20I%20use/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1568,7 +1521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../4.%20Strapi/New%20Project/" class="md-nav__link">
+      <a href="../../4.%20Strapi/New%20Project/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1615,7 +1568,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../5.%20Ghost/" class="md-nav__link ">
+            <a href="../../5.%20Ghost/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1648,6 +1601,8 @@
                 
   
   
+    
+  
   
     
     
@@ -1662,13 +1617,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" checked>
         
           <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
             
@@ -1681,7 +1636,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_6">
             <span class="md-nav__icon md-icon"></span>
             6. Prisma + Postgresql
@@ -1694,7 +1649,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../6.%20Prisma%20%2B%20Postgresql/APIs/" class="md-nav__link">
+      <a href="../APIs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1712,9 +1667,18 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../../6.%20Prisma%20%2B%20Postgresql/Index/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1723,6 +1687,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1734,7 +1699,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../6.%20Prisma%20%2B%20Postgresql/Local%20psql/" class="md-nav__link">
+      <a href="../Local%20psql/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1754,7 +1719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../6.%20Prisma%20%2B%20Postgresql/Migrations/" class="md-nav__link">
+      <a href="../Migrations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1864,7 +1829,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../Front-end%20Frameworks/1.%20NextJs/" class="md-nav__link ">
+            <a href="../../../Front-end%20Frameworks/1.%20NextJs/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1895,7 +1860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/1.%20NextJs/GetProps/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/1.%20NextJs/GetProps/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1934,7 +1899,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../Front-end%20Frameworks/1.%20NextJs/Axios/" class="md-nav__link ">
+            <a href="../../../Front-end%20Frameworks/1.%20NextJs/Axios/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2011,7 +1976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/1.%20NextJs/Data/From%20Airtable/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/1.%20NextJs/Data/From%20Airtable/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2031,7 +1996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/1.%20NextJs/Data/From%20GraphQL/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/1.%20NextJs/Data/From%20GraphQL/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2051,7 +2016,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/1.%20NextJs/Data/From%20a%20JSON%20file/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/1.%20NextJs/Data/From%20a%20JSON%20file/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2121,7 +2086,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/1.%20NextJs/New%20Project/1.%20Start/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/1.%20NextJs/New%20Project/1.%20Start/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2141,7 +2106,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/1.%20NextJs/New%20Project/2.%20New%20Component%20Configurations/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/1.%20NextJs/New%20Project/2.%20New%20Component%20Configurations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2161,7 +2126,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/1.%20NextJs/New%20Project/3.%20Tailwind%20CSS/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/1.%20NextJs/New%20Project/3.%20Tailwind%20CSS/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2227,7 +2192,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/1.%20NextJs/Pages/1.%20Static%20pages/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/1.%20NextJs/Pages/1.%20Static%20pages/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2274,7 +2239,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../Front-end%20Frameworks/1.%20NextJs/Some%20Functions/" class="md-nav__link ">
+            <a href="../../../Front-end%20Frameworks/1.%20NextJs/Some%20Functions/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2349,7 +2314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/1.%20NextJs/Styled%20Components/Add%20Styled%20Components/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/1.%20NextJs/Styled%20Components/Add%20Styled%20Components/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2369,7 +2334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/1.%20NextJs/Styled%20Components/Create%20Global%20Styles/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/1.%20NextJs/Styled%20Components/Create%20Global%20Styles/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2440,7 +2405,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../Front-end%20Frameworks/2.%20Gatsby/" class="md-nav__link ">
+            <a href="../../../Front-end%20Frameworks/2.%20Gatsby/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2525,7 +2490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/2.%20Gatsby/Basics/Common%20styles%20I%20use/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/2.%20Gatsby/Basics/Common%20styles%20I%20use/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2545,7 +2510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/2.%20Gatsby/Basics/Conditional%20Statements/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/2.%20Gatsby/Basics/Conditional%20Statements/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2565,7 +2530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/2.%20Gatsby/Basics/Find%20and%20Filter/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/2.%20Gatsby/Basics/Find%20and%20Filter/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2585,7 +2550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/2.%20Gatsby/Basics/Local%20Storage/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/2.%20Gatsby/Basics/Local%20Storage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2605,7 +2570,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/2.%20Gatsby/Basics/Loops%20in%20Gatsby/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/2.%20Gatsby/Basics/Loops%20in%20Gatsby/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2625,7 +2590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/2.%20Gatsby/Basics/New%20Project/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/2.%20Gatsby/Basics/New%20Project/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2645,7 +2610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/2.%20Gatsby/Basics/Remote%20Images/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/2.%20Gatsby/Basics/Remote%20Images/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2665,7 +2630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/2.%20Gatsby/Basics/To%20Read%20Markdown%20files/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/2.%20Gatsby/Basics/To%20Read%20Markdown%20files/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2685,7 +2650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/2.%20Gatsby/Basics/Using%20Dotenv/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/2.%20Gatsby/Basics/Using%20Dotenv/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2789,7 +2754,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/2.%20Gatsby/Dynamic%20Data/Firebase/1.%20Installing%20Firebase/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/2.%20Gatsby/Dynamic%20Data/Firebase/1.%20Installing%20Firebase/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2863,7 +2828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/2.%20Gatsby/Forms/Form%20with%20Airtable%20as%20Backend/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/2.%20Gatsby/Forms/Form%20with%20Airtable%20as%20Backend/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2937,7 +2902,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/2.%20Gatsby/Importing%20Data/From%20Airtable/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/2.%20Gatsby/Importing%20Data/From%20Airtable/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2957,7 +2922,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/2.%20Gatsby/Importing%20Data/From%20Firebase/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/2.%20Gatsby/Importing%20Data/From%20Firebase/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2977,7 +2942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/2.%20Gatsby/Importing%20Data/From%20GraphCMS/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/2.%20Gatsby/Importing%20Data/From%20GraphCMS/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2997,7 +2962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/2.%20Gatsby/Importing%20Data/From%20Json%20File/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/2.%20Gatsby/Importing%20Data/From%20Json%20File/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3017,7 +2982,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/2.%20Gatsby/Importing%20Data/From%20YAML%20files/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/2.%20Gatsby/Importing%20Data/From%20YAML%20files/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3083,7 +3048,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/2.%20Gatsby/New%20Project/1.%20Start/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/2.%20Gatsby/New%20Project/1.%20Start/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3151,7 +3116,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/2.%20Gatsby/React%20Basics/Infinte%20Scroll/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/2.%20Gatsby/React%20Basics/Infinte%20Scroll/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3171,7 +3136,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/2.%20Gatsby/React%20Basics/Using%20States/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/2.%20Gatsby/React%20Basics/Using%20States/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3237,7 +3202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/2.%20Gatsby/SEO/Creating%20Social%20Cards/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/2.%20Gatsby/SEO/Creating%20Social%20Cards/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3303,7 +3268,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/2.%20Gatsby/Search/Local%20Search/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/2.%20Gatsby/Search/Local%20Search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3360,7 +3325,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../Front-end%20Frameworks/3.%20Jekyll/" class="md-nav__link ">
+            <a href="../../../Front-end%20Frameworks/3.%20Jekyll/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3391,7 +3356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Front-end%20Frameworks/3.%20Jekyll/New%20Jekyll%20project/" class="md-nav__link">
+      <a href="../../../Front-end%20Frameworks/3.%20Jekyll/New%20Jekyll%20project/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3499,7 +3464,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../Integrations/Shopify/" class="md-nav__link ">
+            <a href="../../../Integrations/Shopify/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3530,7 +3495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Integrations/Shopify/Commands%20CLI/" class="md-nav__link">
+      <a href="../../../Integrations/Shopify/Commands%20CLI/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3550,7 +3515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Integrations/Shopify/Learning%20from%20Scratch/" class="md-nav__link">
+      <a href="../../../Integrations/Shopify/Learning%20from%20Scratch/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3570,7 +3535,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Integrations/Shopify/Links/" class="md-nav__link">
+      <a href="../../../Integrations/Shopify/Links/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3590,7 +3555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Integrations/Shopify/Mutations/" class="md-nav__link">
+      <a href="../../../Integrations/Shopify/Mutations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3610,7 +3575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Integrations/Shopify/References/" class="md-nav__link">
+      <a href="../../../Integrations/Shopify/References/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3630,7 +3595,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Integrations/Shopify/Tutorial/" class="md-nav__link">
+      <a href="../../../Integrations/Shopify/Tutorial/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3671,7 +3636,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../Integrations/Shopify/Extensions/" class="md-nav__link ">
+            <a href="../../../Integrations/Shopify/Extensions/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3702,7 +3667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Integrations/Shopify/Extensions/Post%20Purchase/" class="md-nav__link">
+      <a href="../../../Integrations/Shopify/Extensions/Post%20Purchase/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3776,7 +3741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Integrations/Slack/index.js/" class="md-nav__link">
+      <a href="../../../Integrations/Slack/index.js/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3882,7 +3847,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../Tools%20and%20tricks/Dev%20Notes/" class="md-nav__link ">
+            <a href="../../../Tools%20and%20tricks/Dev%20Notes/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3913,7 +3878,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Tools%20and%20tricks/Dev%20Notes/Current%20Setup/" class="md-nav__link">
+      <a href="../../../Tools%20and%20tricks/Dev%20Notes/Current%20Setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3933,7 +3898,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Tools%20and%20tricks/Dev%20Notes/Internal%20linking/" class="md-nav__link">
+      <a href="../../../Tools%20and%20tricks/Dev%20Notes/Internal%20linking/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3953,7 +3918,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Tools%20and%20tricks/Dev%20Notes/Material%20Theme/" class="md-nav__link">
+      <a href="../../../Tools%20and%20tricks/Dev%20Notes/Material%20Theme/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3973,7 +3938,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Tools%20and%20tricks/Dev%20Notes/Setup%20-%20nvm/" class="md-nav__link">
+      <a href="../../../Tools%20and%20tricks/Dev%20Notes/Setup%20-%20nvm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3993,7 +3958,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Tools%20and%20tricks/Dev%20Notes/my-mkdocs-config/" class="md-nav__link">
+      <a href="../../../Tools%20and%20tricks/Dev%20Notes/my-mkdocs-config/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4040,7 +4005,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../Tools%20and%20tricks/Github/" class="md-nav__link ">
+            <a href="../../../Tools%20and%20tricks/Github/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -4094,7 +4059,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../Tools%20and%20tricks/Terminal/" class="md-nav__link ">
+            <a href="../../../Tools%20and%20tricks/Terminal/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -4147,21 +4112,8 @@
   
   
   
+    
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#getting-timezones" class="md-nav__link">
-    Getting TimeZones
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -4176,45 +4128,10 @@
                   
 
 
-  <h1>READ functions</h1>
-
-<h3 id="getting-timezones">Getting TimeZones</h3>
-<pre><code>select name, abbrev, utc_offset, is_dst
-from pg_timezone_names()
-order by name;
-</code></pre>
-<pre><code>export async function getBookingFromSearch(query, callback) {
-    let pattern = /@/g;
-    let filterByEmail = null;
-    let filterByPhone = null;
-    let result = pattern.test(query);
-
-    if (result) {
-        filterByEmail = query;
-    } else {
-        filterByPhone = query;
-    }
-
-    let query = supabase
-        .from(&quot;bookings&quot;)
-        .select(`*, brands(name)`)
-        .order(&quot;inserted_at&quot;, { ascending: false });
-
-    if (filterByEmail) {
-        query = query.eq(&quot;booking_email&quot;, filterByEmail);
-    }
-    if (filterByPhone) {
-        query = query.eq(&quot;booking_phone&quot;, filterByPhone);
-    }
-
-    let { data: bookings, error } = await query;
-    if (error) {
-        return callback(error);
-    } else {
-        return callback(bookings);
-    }
-}
-</code></pre>
+<h1 id="prisma">Prisma</h1>
+<ul>
+<li>https://www.prisma.io/</li>
+</ul>
 
 
 
@@ -4306,10 +4223,10 @@ order by name;
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.path", "navigation.indexes", "navigation.instant", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.path", "navigation.indexes", "navigation.instant", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
       
     
   </body>
