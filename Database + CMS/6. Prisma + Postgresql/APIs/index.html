@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../5.%20Ghost/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../Index/">
+        <link rel="next" href="../Local%20psql/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -1608,6 +1608,8 @@
     
       
         
+          
+        
       
         
       
@@ -1625,16 +1627,24 @@
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" checked>
         
-          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
-            
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     6. Prisma + Postgresql
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              <label class="md-nav__link " for="__nav_3_6">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_6">
@@ -1642,6 +1652,8 @@
             6. Prisma + Postgresql
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -1701,26 +1713,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Index/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Prisma
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -4180,30 +4172,33 @@
 <pre><code>import prisma from &quot;../../utils/prisma&quot;;
 
 function bigIntToString(obj) {
-for (let key in obj) {
-if (typeof obj[key] === &quot;bigint&quot;) {
-obj[key] = obj[key].toString();
-} else if (typeof obj[key] === &quot;object&quot; &amp;&amp; obj[key] !== null) {
-bigIntToString(obj[key]);
-}
-}
+    for (let key in obj) {
+        if (typeof obj[key] === &quot;bigint&quot;) {
+            obj[key] = obj[key].toString();
+        } 
+        else if (typeof obj[key] === &quot;object&quot; &amp;&amp; obj[key] !== null) {
+            bigIntToString(obj[key]);
+        }
+    }
 }
 // GET /api/users
 export default async function handle(req, res) {
-if (req.method === &quot;GET&quot;) {
-try {
-const users = await prisma.user.findMany();
-users.forEach((user) =&gt; bigIntToString(user));
-res.status(200).json(users);
-} catch (error) {
-console.error(&quot;Request error&quot;, error);
-res.status(500).json({ error: &quot;Error fetching users&quot; });
-}
-} else {
-// Handle any other HTTP method
-res.setHeader(&quot;Allow&quot;, [&quot;GET&quot;]);
-res.status(405).json({ error: `Method ${req.method} Not Allowed` });
-}
+    if (req.method === &quot;GET&quot;) {
+        try {
+            const users = await prisma.user.findMany();
+            users.forEach((user) =&gt; bigIntToString(user));
+            res.status(200).json(users);
+        } 
+        catch (error) {
+            console.error(&quot;Request error&quot;, error);
+            res.status(500).json({ error: &quot;Error fetching users&quot; });
+        }
+        } 
+        else {
+        // Handle any other HTTP method
+            res.setHeader(&quot;Allow&quot;, [&quot;GET&quot;]);
+            res.status(405).json({ error: `Method ${req.method} Not Allowed` });
+    }
 }
 
 </code></pre>

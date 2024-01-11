@@ -1608,6 +1608,8 @@
     
       
         
+          
+        
       
         
       
@@ -1625,16 +1627,24 @@
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" checked>
         
-          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
-            
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     6. Prisma + Postgresql
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              <label class="md-nav__link " for="__nav_3_6">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_6">
@@ -1642,6 +1652,8 @@
             6. Prisma + Postgresql
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -1654,26 +1666,6 @@
   
   <span class="md-ellipsis">
     APIs
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Index/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Prisma
   </span>
   
 
@@ -4423,39 +4415,21 @@ console.log(`Seeding finished.`);
 
 main()
 .then(async () =&gt; {
-await prisma.$disconnect();
+    await prisma.$disconnect();
 })
 .catch(async (e) =&gt; {
-console.error(e);
-await prisma.$disconnect();
-process.exit(1);
+    console.error(e);
+    await prisma.$disconnect();
+    process.exit(1);
 });
 </code></pre>
 <ul>
 <li>In the <code>package.json</code></li>
 </ul>
 <pre><code>{
-&quot;prisma&quot;: {
-&quot;seed&quot;: &quot;node prisma/seed.js&quot;
-},
-&quot;scripts&quot;: {
-&quot;dev&quot;: &quot;next dev&quot;,
-&quot;build&quot;: &quot;next build&quot;,
-&quot;start&quot;: &quot;next start&quot;,
-&quot;lint&quot;: &quot;next lint&quot;
-},
-&quot;dependencies&quot;: {
-&quot;@prisma/client&quot;: &quot;^5.8.0&quot;,
-&quot;next&quot;: &quot;^14.0.1&quot;,
-&quot;react&quot;: &quot;^18.2.0&quot;,
-&quot;react-dom&quot;: &quot;^18.2.0&quot;
-},
-&quot;devDependencies&quot;: {
-&quot;autoprefixer&quot;: &quot;^10.4.16&quot;,
-&quot;postcss&quot;: &quot;^8.4.31&quot;,
-&quot;prisma&quot;: &quot;^5.8.0&quot;,
-&quot;tailwindcss&quot;: &quot;^3.3.5&quot;
-}
+    &quot;prisma&quot;: {
+        &quot;seed&quot;: &quot;node prisma/seed.js&quot;
+    },
 }
 </code></pre>
 <ul>
