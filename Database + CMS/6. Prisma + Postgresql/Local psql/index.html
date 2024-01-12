@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#enter-psql" class="md-skip">
+        <a href="#start-a-server" class="md-skip">
           Skip to content
         </a>
       
@@ -1723,6 +1723,34 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#start-a-server" class="md-nav__link">
+    Start a server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-if-server-is-running" class="md-nav__link">
+    Check if server is running
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stop-local-postgress" class="md-nav__link">
+    Stop local postgress
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#restart-services" class="md-nav__link">
+    Restart services
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#enter-psql" class="md-nav__link">
     Enter psql
   </a>
@@ -1732,6 +1760,20 @@
         <li class="md-nav__item">
   <a href="#exit-psql" class="md-nav__link">
     Exit psql
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#view-all-tables-in-psql" class="md-nav__link">
+    View all tables in psql
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-a-local-query" class="md-nav__link">
+    Run a local query
   </a>
   
 </li>
@@ -4152,6 +4194,34 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#start-a-server" class="md-nav__link">
+    Start a server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-if-server-is-running" class="md-nav__link">
+    Check if server is running
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stop-local-postgress" class="md-nav__link">
+    Stop local postgress
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#restart-services" class="md-nav__link">
+    Restart services
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#enter-psql" class="md-nav__link">
     Enter psql
   </a>
@@ -4161,6 +4231,20 @@
         <li class="md-nav__item">
   <a href="#exit-psql" class="md-nav__link">
     Exit psql
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#view-all-tables-in-psql" class="md-nav__link">
+    View all tables in psql
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-a-local-query" class="md-nav__link">
+    Run a local query
   </a>
   
 </li>
@@ -4182,13 +4266,31 @@
 
   <h1>Local psql</h1>
 
+<h3 id="start-a-server">Start a server</h3>
+<pre><code>brew service start postgresql@15
+</code></pre>
+<h3 id="check-if-server-is-running">Check if server is running</h3>
+<pre><code>brew services list
+</code></pre>
+<h3 id="stop-local-postgress">Stop local postgress</h3>
+<pre><code>brew services stop postgresql@15
+</code></pre>
+<h3 id="restart-services">Restart services</h3>
+<pre><code>brew services restart postgresql@15
+</code></pre>
 <h3 id="enter-psql">Enter psql</h3>
-<pre><code>psql
+<pre><code>psql -d gymdb
 </code></pre>
 <h3 id="exit-psql">Exit psql</h3>
 <pre><code>\q
 </code></pre>
 <p><a href="https://hasura.io/blog/top-psql-commands-and-flags-you-need-to-know-postgresql/">For more info</a></p>
+<h3 id="view-all-tables-in-psql">View all tables in psql</h3>
+<pre><code>\dt
+</code></pre>
+<h3 id="run-a-local-query">Run a local query</h3>
+<pre><code>select * from &quot;User&quot;;
+</code></pre>
 
 
 
