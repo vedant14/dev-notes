@@ -4270,6 +4270,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#other-tables-with-rls" class="md-nav__link">
+    Other tables with RLS
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4288,7 +4295,7 @@
   <h1>Index</h1>
 
 <h3 id="creating-user-tables">Creating user tables</h3>
-<pre><code>create table public.profiles (
+<pre><code class="language-sql">create table public.profiles (
     id uuid not null references auth.users on delete cascade,
     first_name text,
     last_name text, 
@@ -4299,6 +4306,21 @@ alter table public.profiles enable row level security;
 create policy &quot;Users can update own profile.&quot;
 on profiles for update
 using ( auth.uid() = id );
+</code></pre>
+<h3 id="other-tables-with-rls">Other tables with RLS</h3>
+<pre><code class="language-sql">create table gym_sessions (
+    id bigint primary key generated always as identity,
+    user_id uuid references auth.users (id) on delete cascade not null,
+    session_date timestamp with time zone default timezone('ist'::text, now()) not null,
+    deleted_at timestamp with time zone,
+    inserted_at timestamp with time zone default timezone('ist'::text, now()) not null,
+    updated_at timestamp with time zone default timezone('ist'::text, now()) not null
+);
+alter table public.gym_sessions enable row level security;
+CREATE POLICY store_gym_session
+  ON gym_sessions
+  FOR SELECT
+  USING (auth.uid() = user_id);
 </code></pre>
 
 
