@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../APIs/">
+        <link rel="prev" href="../Getting%20Started/">
       
       
         <link rel="next" href="../Migrations/">
@@ -1721,6 +1721,8 @@
       
         
       
+        
+      
     
     
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
@@ -1770,6 +1772,26 @@
   
   <span class="md-ellipsis">
     APIs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Getting%20Started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
   </span>
   
 
@@ -1850,6 +1872,20 @@
         <li class="md-nav__item">
   <a href="#restart-services" class="md-nav__link">
     Restart services
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-of-all-databases" class="md-nav__link">
+    List of all databases
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-database" class="md-nav__link">
+    Create database
   </a>
   
 </li>
@@ -4382,6 +4418,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#list-of-all-databases" class="md-nav__link">
+    List of all databases
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-database" class="md-nav__link">
+    Create database
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#enter-psql" class="md-nav__link">
     Enter psql
   </a>
@@ -4438,13 +4488,20 @@
 <h3 id="restart-services">Restart services</h3>
 <pre><code>brew services restart postgresql@15
 </code></pre>
+<h3 id="list-of-all-databases">List of all databases</h3>
+<pre><code>psql -l
+
+</code></pre>
+<h3 id="create-database">Create database</h3>
+<pre><code>CREATE DATABASE database_name;
+</code></pre>
 <h3 id="enter-psql">Enter psql</h3>
-<pre><code>psql -d gymdb
+<pre><code>psql -d &lt;DATABASE&gt;
 </code></pre>
 <h3 id="exit-psql">Exit psql</h3>
 <pre><code>\q
 </code></pre>
-<p><a href="https://hasura.io/blog/top-psql-commands-and-flags-you-need-to-know-postgresql/">For more info</a></p>
+<p><a href="https://quickref.me/postgres.html/">For more info</a></p>
 <h3 id="view-all-tables-in-psql">View all tables in psql</h3>
 <pre><code>\dt
 </code></pre>
